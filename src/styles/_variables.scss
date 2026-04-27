@@ -1,0 +1,55 @@
+// Color Palette
+$color-bg: #080808;
+$color-surface: #111111;
+$color-surface-2: #191919;
+$color-border: rgba(255, 255, 255, 0.07);
+$color-border-hover: rgba(255, 255, 255, 0.15);
+$color-primary: #f0f0f0;
+$color-secondary: #888888;
+$color-muted: #4a4a4a;
+$color-accent: #6c63ff;
+$color-accent-hover: #8b84ff;
+$color-accent-dim: rgba(108, 99, 255, 0.12);
+$color-white: #ffffff;
+
+// Typography
+$font-family: 'Pretendard', 'Apple SD Gothic Neo', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+$font-family-en: 'Inter', 'Helvetica Neue', Arial, sans-serif;
+
+// Spacing
+$spacing-2xs: 4px;
+$spacing-xs: 8px;
+$spacing-sm: 12px;
+$spacing-md: 16px;
+$spacing-lg: 24px;
+$spacing-xl: 40px;
+$spacing-2xl: 64px;
+$spacing-3xl: 96px;
+
+// Border Radius
+$radius-xs: 4px;
+$radius-sm: 6px;
+$radius-md: 10px;
+$radius-lg: 16px;
+$radius-xl: 24px;
+$radius-full: 9999px;
+
+// Transitions
+$transition-fast: 0.15s ease;
+$transition-base: 0.25s ease;
+$transition-slow: 0.4s ease;
+
+// Z-Index
+$z-nav: 100;
+$z-overlay: 200;
+$z-modal: 300;
+
+// Layout
+$max-width: 1440px;
+$nav-height: 64px;
+
+// Breakpoints
+$bp-mobile: 480px;
+$bp-tablet: 768px;
+$bp-desktop: 1024px;
+$bp-wide: 1280px;

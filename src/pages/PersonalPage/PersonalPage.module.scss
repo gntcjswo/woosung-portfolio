@@ -1,0 +1,36 @@
+@use '@/styles/shared' as *;
+
+.page {
+  padding-top: $nav-height;
+  min-height: 100vh;
+}
+
+.inner {
+  max-width: $max-width;
+  margin: 0 auto;
+  padding: $spacing-2xl $spacing-lg $spacing-3xl;
+}
+
+.pageHeader {
+  margin-bottom: $spacing-2xl;
+}
+
+.heading {
+  font-family: $font-family-en;
+  font-size: clamp(32px, 5vw, 56px);
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  color: $color-primary;
+  line-height: 1.1;
+  margin-bottom: $spacing-sm;
+}
+
+.subHeading {
+  font-size: 15px;
+  color: $color-secondary;
+  line-height: 1.6;
+
+  @include tablet {
+    font-size: 16px;
+  }
+}

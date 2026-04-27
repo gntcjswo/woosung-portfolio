@@ -1,0 +1,478 @@
+@use '@/styles/shared' as *;
+
+.page {
+  padding-top: $nav-height;
+  min-height: 100vh;
+}
+
+.inner {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: $spacing-2xl $spacing-lg $spacing-3xl;
+}
+
+// ?????? Hero ??????????????????????????????????????????????????????????????????????????????????????
+.hero {
+  display: flex;
+  flex-direction: column;
+  gap: $spacing-2xl;
+  padding: $spacing-2xl 0;
+
+  @include desktop {
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+}
+
+.heroLeft {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: $spacing-md;
+  max-width: 600px;
+}
+
+.badge {
+  display: inline-flex;
+  align-items: center;
+  padding: 4px 14px;
+  font-size: 12px;
+  font-weight: 600;
+  font-family: $font-family-en;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: $color-accent;
+  background: $color-accent-dim;
+  border: 1px solid rgba(108, 99, 255, 0.3);
+  border-radius: $radius-full;
+  width: fit-content;
+}
+
+.name {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.nameEn {
+  font-family: $font-family-en;
+  font-size: clamp(36px, 6vw, 56px);
+  font-weight: 800;
+  letter-spacing: -0.03em;
+  color: $color-primary;
+  line-height: 1;
+}
+
+.nameKo {
+  font-size: 14px;
+  font-weight: 500;
+  color: $color-secondary;
+  letter-spacing: 0.1em;
+}
+
+.bio {
+  font-size: 15px;
+  color: $color-secondary;
+  line-height: 1.8;
+  word-break: keep-all;
+
+  @include tablet {
+    font-size: 15px;
+  }
+}
+
+.contactList {
+  display: flex;
+  flex-wrap: wrap;
+  gap: $spacing-sm;
+  margin-top: $spacing-xs;
+}
+
+.contactItem {
+  display: inline-flex;
+  align-items: center;
+  gap: $spacing-xs;
+  font-size: 13px;
+  font-weight: 500;
+  color: $color-secondary;
+  padding: 7px 14px;
+  background: $color-surface;
+  border: 1px solid $color-border;
+  border-radius: $radius-full;
+  transition: color $transition-fast, border-color $transition-fast;
+
+  svg {
+    width: 14px;
+    height: 14px;
+    flex-shrink: 0;
+  }
+
+  &:hover {
+    color: $color-primary;
+    border-color: $color-border-hover;
+  }
+}
+
+.heroRight {
+  flex-shrink: 0;
+}
+
+.statGrid {
+  display: flex;
+  gap: $spacing-lg;
+
+  @include desktop {
+    flex-direction: column;
+    gap: $spacing-md;
+  }
+}
+
+.statItem {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: $spacing-md $spacing-lg;
+  background: $color-surface;
+  border: 1px solid $color-border;
+  border-radius: $radius-lg;
+  min-width: 100px;
+}
+
+.statNum {
+  font-family: $font-family-en;
+  font-size: 36px;
+  font-weight: 800;
+  color: $color-primary;
+  line-height: 1;
+  letter-spacing: -0.03em;
+
+  span {
+    font-size: 18px;
+    color: $color-accent;
+    font-weight: 600;
+  }
+}
+
+.statLabel {
+  font-size: 11px;
+  font-weight: 600;
+  font-family: $font-family-en;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: $color-secondary;
+  margin-top: 4px;
+}
+
+// ?????? Divider ????????????????????????????????????????????????????????????????????????????????
+.divider {
+  height: 1px;
+  background: $color-border;
+  margin: $spacing-2xl 0;
+}
+
+// ?????? Section ????????????????????????????????????????????????????????????????????????????????
+.section {
+  padding: $spacing-lg 0;
+}
+
+.sectionTitle {
+  display: flex;
+  align-items: center;
+  gap: $spacing-md;
+  margin-bottom: $spacing-xl;
+
+  span {
+    font-family: $font-family-en;
+    font-size: 22px;
+    font-weight: 800;
+    letter-spacing: -0.02em;
+    color: $color-primary;
+
+    @include tablet {
+      font-size: 26px;
+    }
+  }
+
+  &::after {
+    content: '';
+    flex: 1;
+    height: 1px;
+    background: $color-border;
+  }
+}
+
+// ??? Summary ????????????????????????????????????????
+.summaryList {
+  display: flex;
+  flex-direction: column;
+  gap: $spacing-sm;
+}
+
+.summaryItem {
+  font-size: 14px;
+  color: $color-primary;
+  line-height: 1.7;
+  padding-left: $spacing-lg;
+  position: relative;
+  word-break: keep-all;
+
+  &::before {
+    content: '\2014';
+    position: absolute;
+    left: 0;
+    color: $color-accent;
+    font-size: 12px;
+    top: 2px;
+  }
+}
+
+// ??? FAQ ????????????????????????????????????????????
+.faqList {
+  display: flex;
+  flex-direction: column;
+  gap: $spacing-md;
+}
+
+.faqItem {
+  padding: $spacing-lg $spacing-xl;
+  background: $color-surface;
+  border: 1px solid $color-border;
+  border-radius: $radius-lg;
+  display: flex;
+  flex-direction: column;
+  gap: $spacing-sm;
+  transition: border-color $transition-base;
+
+  &:hover {
+    border-color: $color-border-hover;
+  }
+}
+
+.faqQ {
+  font-size: 14px;
+  font-weight: 700;
+  color: $color-primary;
+  line-height: 1.5;
+  word-break: keep-all;
+
+  &::before {
+    content: 'Q. ';
+    color: $color-accent;
+  }
+}
+
+.faqA {
+  font-size: 14px;
+  color: $color-secondary;
+  line-height: 1.8;
+  word-break: keep-all;
+  padding-left: $spacing-md;
+  border-left: 2px solid $color-border;
+}
+
+// ??? Skills ?????????????????????????????????????????
+.skillCategories {
+  display: flex;
+  flex-direction: column;
+  gap: $spacing-lg;
+}
+
+.skillCategory {
+  // ????? ?? ?? ?? ?? ??? ??
+  &:has(h3) {
+    background: $color-surface;
+    border: 1px solid $color-border;
+    border-radius: $radius-lg;
+    padding: $spacing-lg;
+  }
+}
+
+.skillCategoryName {
+  font-size: 12px;
+  font-weight: 700;
+  font-family: $font-family-en;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: $color-accent;
+  margin-bottom: $spacing-md;
+}
+
+.skillList {
+  display: flex;
+  flex-wrap: wrap;
+  gap: $spacing-xs;
+}
+
+.skillBadge {
+  display: inline-flex;
+  align-items: center;
+  padding: 5px 12px;
+  font-size: 13px;
+  font-weight: 500;
+  color: $color-primary;
+  background: $color-surface-2;
+  border: 1px solid $color-border;
+  border-radius: $radius-full;
+  transition: border-color $transition-fast, color $transition-fast;
+
+  &:hover {
+    border-color: $color-border-hover;
+    color: $color-white;
+  }
+}
+
+// ?????? Career ??????????????????????????????????????????????????????????????????????????????????
+.careerList {
+  display: flex;
+  flex-direction: column;
+  gap: $spacing-xl;
+}
+
+.careerItem {
+  padding: $spacing-xl;
+  background: $color-surface;
+  border: 1px solid $color-border;
+  border-radius: $radius-lg;
+  display: flex;
+  flex-direction: column;
+  gap: $spacing-md;
+  transition: border-color $transition-base;
+
+  &:hover {
+    border-color: $color-border-hover;
+  }
+}
+
+.careerHeader {
+  @include flex-between;
+  align-items: flex-start;
+  gap: $spacing-md;
+  flex-wrap: wrap;
+}
+
+.careerCompany {
+  font-size: 18px;
+  font-weight: 700;
+  color: $color-primary;
+}
+
+.careerPosition {
+  font-size: 14px;
+  font-weight: 500;
+  color: $color-accent;
+  margin-top: 2px;
+}
+
+.careerPeriod {
+  font-size: 12px;
+  font-family: $font-family-en;
+  font-weight: 600;
+  color: $color-secondary;
+  white-space: nowrap;
+  padding: 4px 12px;
+  background: $color-surface-2;
+  border-radius: $radius-full;
+}
+
+.careerDesc {
+  font-size: 14px;
+  color: $color-secondary;
+  line-height: 1.6;
+}
+
+.taskList {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+
+  li {
+    font-size: 14px;
+    color: $color-primary;
+    padding-left: $spacing-md;
+    position: relative;
+    line-height: 1.6;
+
+    &::before {
+      content: '\2014';
+      position: absolute;
+      left: 0;
+      color: $color-accent;
+      font-size: 12px;
+    }
+  }
+}
+
+// ?????? Education ????????????????????????????????????????????????????????????????????????????
+.eduList {
+  display: flex;
+  flex-direction: column;
+  gap: $spacing-md;
+}
+
+.eduItem {
+  @include flex-between;
+  padding: $spacing-lg $spacing-xl;
+  background: $color-surface;
+  border: 1px solid $color-border;
+  border-radius: $radius-lg;
+  gap: $spacing-md;
+  flex-wrap: wrap;
+}
+
+.eduLeft {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.eduSchool {
+  font-size: 16px;
+  font-weight: 700;
+  color: $color-primary;
+}
+
+.eduMajor {
+  font-size: 13px;
+  color: $color-secondary;
+}
+
+.eduPeriod {
+  font-size: 12px;
+  font-family: $font-family-en;
+  font-weight: 600;
+  color: $color-secondary;
+  white-space: nowrap;
+}
+
+// ?????? Loading / Error ????????????????????????????????????????????????????????????????
+.loadingState {
+  display: flex;
+  flex-direction: column;
+  gap: $spacing-xl;
+  padding: $spacing-2xl 0;
+}
+
+.skeleton {
+  height: 200px;
+  background: linear-gradient(
+    90deg,
+    $color-surface 25%,
+    $color-surface-2 50%,
+    $color-surface 75%
+  );
+  background-size: 200% 100%;
+  border-radius: $radius-lg;
+  animation: shimmer 1.5s infinite;
+}
+
+@keyframes shimmer {
+  0% { background-position: 200% 0; }
+  100% { background-position: -200% 0; }
+}
+
+.error {
+  text-align: center;
+  padding: $spacing-3xl;
+  color: $color-secondary;
+}

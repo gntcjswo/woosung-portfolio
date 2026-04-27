@@ -1,0 +1,54 @@
+name: FTP Deploy
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+          cache: 'npm'
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Build project
+        run: npm run build
+
+      - name: Download deploy history
+        uses: actions/download-artifact@v4
+        with:
+          name: ftp-deploy-sync
+        continue-on-error: true
+
+      - name: FTP Deploy
+        uses: SamKirkland/FTP-Deploy-Action@v4.3.5
+        with:
+          server: ${{ secrets.FTP_HOST }}
+          port: 53721
+          username: ${{ secrets.FTP_USERNAME }}
+          password: ${{ secrets.FTP_PASSWORD }}
+          local-dir: ./dist/
+          server-dir: ${{ secrets.FTP_TARGET_DIR }}
+          dangerous-clean-slate: false
+          state-name: .ftp-deploy-sync.json
+
+      - name: Upload deploy history
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: ftp-deploy-sync
+          path: .ftp-deploy-sync.json
+
+      # - name: List all files recursively
+      #   run: find . -type f

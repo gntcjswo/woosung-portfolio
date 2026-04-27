@@ -1,0 +1,796 @@
+[
+  {
+    "id": "mobileworks-renewal",
+    "name": "모바일웍스코리아 기업 홈페이지 리뉴얼 및 포트폴리오 플랫폼",
+    "thumbnail": "/img/portfolio/img_mwk.png",
+    "links": [
+      {
+        "label": "Live",
+        "url": "http://www.mwkorea.co.kr/"
+      }
+    ],
+    "tags": ["React", "JavaScript", "SCSS", "GitHub Actions"],
+    "period": "2025.11 ~ 2026.03",
+    "techStack": ["SCSS", "JavaScript", "React", "Gatsby", "Node.js", "Yarn", "GitHub Actions"],
+    "roles": ["UI 퍼블리싱 및 프론트엔드 구조 설계", "공통 컴포넌트/데이터 기반 페이지 운영"],
+    "achievements": [
+      "React + Gatsby 기반으로 기업 소개/포트폴리오/문의 등 핵심 페이지를 일관된 UI 구조로 구축",
+      "SCSS 모듈과 BEM 네이밍 규칙을 적용해 스타일 유지보수성과 협업 효율 향상",
+      "공통 레이아웃·내비게이션·섹션 컴포넌트 중심으로 화면을 모듈화해 재사용성과 확장성 확보",
+      "포트폴리오 데이터를 구조화하고 정렬/노출 로직을 고도화해 콘텐츠 운영 편의성 개선",
+      "스크롤 기반 인터랙션 및 슬라이더 모션을 적용해 메인/상세 페이지 사용자 경험 강화",
+      "dev/master 브랜치 기반 GitHub Actions 자동 빌드·배포 파이프라인을 구축해 운영/개발 배포 자동화"
+    ],
+    "description": "기업 소개 및 포트폴리오 플랫폼 프론트엔드를 React + Gatsby 기반으로 구축한 프로젝트입니다."
+  },
+  {
+    "id": "hyundai-ev-charging",
+    "name": "현대자동차 글로벌 EV Charging WebView(CCI)",
+    "thumbnail": ["/img/portfolio/img_h_cci.png", "/img/portfolio/img_h_cci_02.png", "/img/portfolio/img_h_cci_03.png", "/img/portfolio/img_h_cci_04.png"],
+    "links": [],
+    "tags": ["React", "TypeScript", "SCSS"],
+    "period": "2025.01 ~ 2025.03",
+    "techStack": ["SCSS", "TypeScript", "React", "Styled-Components", "Node.js", "Vite"],
+    "roles": ["웹뷰 기반 UI 퍼블리싱 및 컴포넌트 구조화", "브랜드별 테마/화면 분기 대응"],
+    "achievements": [
+      "충전 홈·충전 프로세스·이용 이력·구독·약관 등 핵심 사용자 플로우 전반의 화면 퍼블리싱 수행",
+      "버튼/탭/모달/토스트/폼/차트/데이트피커 등 공통 UI 컴포넌트 체계화로 화면 재사용성과 유지보수성 향상",
+      "현대·기아·제네시스 브랜드별 테마와 라우팅 분기 구조를 적용해 단일 코드베이스에서 다브랜드 운영 기반 마련",
+      "QR 스캔·대기/오류/빈 상태 등 다양한 예외 케이스 UI를 반영해 실제 서비스 시나리오 대응력 강화",
+      "화면별 변경 이력 및 검수 케이스를 운영하며 반복 개선 중심의 퍼블리싱 품질 관리 프로세스 정착"
+    ],
+    "description": "글로벌 EV 충전 서비스 웹뷰 UI를 React + Styled-Components 기반으로 구축한 프로젝트입니다."
+  },
+  {
+    "id": "misumi-ecommerce",
+    "name": "한국미스미 이커머스 웹사이트 리뉴얼 (HTML → React 전환)",
+    "thumbnail": "/img/portfolio/img_mismi.png",
+    "links": [
+      {
+        "label": "Live",
+        "url": "https://kr.misumi-ec.com/"
+      }
+    ],
+    "tags": ["React", "TypeScript", "JavaScript", "SCSS", "Next.js"],
+    "period": "2024.05 ~ 2024.08",
+    "techStack": ["SCSS", "JavaScript", "TypeScript", "React", "Next.js"],
+    "roles": ["UI 컴포넌트 설계 및 퍼블리싱", "레거시 구조 개선"],
+    "achievements": [
+      "기존 HTML 기반 정적 페이지를 React / Next.js 환경으로 전환하는 프로젝트 참여",
+      "정적 마크업을 컴포넌트 단위로 재구성하여 재사용성과 유지보수성 향상",
+      "공통 UI 컴포넌트를 설계·구현하고 스토리보드에 반영하여 UI 기준 및 산출물 관리",
+      "상품 리스트·상세·검색/필터 등 데이터 중심 화면을 React 구조에 맞게 재구성",
+      "스토리보드와 실제 구현 간 싱크를 맞추며 기획/개발 간 커뮤니케이션 효율 개선",
+      "반응형 대응 및 접근성을 고려한 시맨틱 마크업 적용"
+    ],
+    "description": "HTML 기반 이커머스 사이트를 React / Next.js 컴포넌트 구조로 전환한 리뉴얼 프로젝트입니다."
+  },
+  {
+    "id": "hana-biz",
+    "name": "하나카드 BIZ PC 채널 리뉴얼",
+    "thumbnail": ["/img/portfolio/img_hana_biz.jpg", "/img/portfolio/img_hana_biz_02.png", "/img/portfolio/img_hana_biz_03.png", "/img/portfolio/img_hana_biz_04.png"],
+    "links": [
+      {
+        "label": "Live",
+        "url": "https://www.hanacard.co.kr/"
+      }
+    ],
+    "tags": ["HTML5", "CSS3", "JavaScript"],
+    "period": "2025.02 ~ 2025.07",
+    "techStack": ["HTML5", "CSS3", "JavaScript", "Node.js", "PostCSS", "Babel"],
+    "roles": ["금융 서비스 웹 퍼블리싱", "공통 UI 인터랙션 설계 및 구현"],
+    "achievements": [
+      "레거시 구조와 신규 화면을 병행 운영할 수 있도록 퍼블리싱 구조를 정비해 기존 서비스와의 충돌 최소화",
+      "입력폼 상태 처리·클리어 버튼·글자 수 카운트 등 공통 폼 UX 동작을 표준화해 화면 간 일관성 확보",
+      "탭/팝업/툴팁/아코디언/데이트피커 등 반복 사용 UI 컴포넌트의 공통 스크립트를 구축해 개발 생산성 향상",
+      "접근성 속성(ARIA, 키보드 포커스 흐름) 반영으로 사용성 및 품질 기준 강화",
+      "PostCSS 기반 빌드/워치 환경과 인코딩 변환 포함 배포 프로세스를 운영해 퍼블리싱 산출물 안정적 관리"
+    ],
+    "description": "하나카드 BIZ 채널 PC 웹 UI를 신규 구축하고 공통 인터랙션 스크립트를 체계화한 금융권 프로젝트입니다."
+  },
+  {
+    "id": "hana-nara",
+    "name": "하나카드 나라사랑카드 모바일 웹",
+    "thumbnail": ["/img/portfolio/img_hana_nara_02.png", "/img/portfolio/img_hana_nara.png", "/img/portfolio/img_hana_nara_03.png", "/img/portfolio/img_hana_nara_04.png"],
+    "links": [
+      {
+        "label": "Live",
+        "url": "https://m.hanacard.co.kr/NARAHNCM.web"
+      }
+    ],
+    "tags": ["HTML5", "CSS3", "JavaScript", "GitHub Actions"],
+    "period": "2025.09 ~ 2025.11",
+    "techStack": ["HTML5", "CSS3", "JavaScript", "Node.js", "GitHub Actions"],
+    "roles": ["모바일 웹 UI 마크업·스타일링", "인터랙션 보완"],
+    "achievements": [
+      "프로모션·혜택·카드신청 흐름에 맞춘 화면 단위 퍼블리싱과 공통 스타일 정리",
+      "컴포넌트·팝업·스크립트 가이드를 바탕으로 재사용 가능한 UI 패턴 정립",
+      "레거시 UI 레이어·폼 컴포넌트와의 연동 및 포커스/접근성 이슈 대응",
+      "GitHub Actions 기반 자동 배포로 산출물 전달·운영 효율화"
+    ],
+    "description": "하나카드 나라사랑카드 모바일 웹 UI 퍼블리싱 및 인터랙션 구현 프로젝트입니다."
+  },
+  {
+    "id": "kia-biz-fms",
+    "name": "기아 비즈(Kia Biz) FMS/IMS 웹/태블릿",
+    "thumbnail": ["/img/portfolio/img_kia_biz_ims.png", "/img/portfolio/img_kia_biz_ims_02.png", "/img/portfolio/img_kia_biz_ims_03.png", "/img/portfolio/img_kia_biz_ims_04.png"],
+    "links": [],
+    "tags": ["HTML5", "SCSS", "JavaScript", "jQuery", "GitHub Actions"],
+    "period": "2025.02 ~ 2025.12",
+    "techStack": ["HTML5", "SCSS", "JavaScript", "jQuery", "GitHub Actions"],
+    "roles": ["비즈니스 화면 UI 마크업·스타일링", "클라이언트 스크립트 연동"],
+    "achievements": [
+      "대시보드·차량 관제·렌탈/결제·권한·데이터 없음 등 다양한 업무 시나리오별 화면을 시맨틱 마크업과 공통 레이아웃에 맞춰 구현",
+      "월·분기·연 단위 대시보드, AI 리포트·사고 분석 리포트 등 데이터 중심 UI 구성 (탭·빈 상태·권한 분기 등)",
+      "카카오맵 API로 사고 지점·주행 경로 시각화 (폴리라인, 커스텀 오버레이·툴팁 등)",
+      "Swiper·커스텀 캘린더 스크립트 등으로 슬라이드·날짜 선택 등 인터랙션 보완",
+      "SCSS로 대시보드·관제 전용 스타일을 모듈화해 유지보수성 확보",
+      "태블릿 전용 IMS 체험하기 구축"
+    ],
+    "description": "기아 비즈 플릿 관리 시스템(FMS) 및 IMS의 웹·태블릿 UI를 담당한 프로젝트입니다."
+  },
+  {
+    "id": "adot-pet-admin",
+    "name": "SKT 에이닷 펫 관리자(Admin) UI",
+    "thumbnail": ["/img/portfolio/img_adotpet_admin.png", "/img/portfolio/img_adotpet_admin_02.png", "/img/portfolio/img_adotpet_admin_03.png", "/img/portfolio/img_adotpet_admin_04.png"],
+    "links": [],
+    "tags": ["HTML5", "SCSS", "JavaScript", "GitHub Actions"],
+    "period": "2025.08 ~ 2025.12",
+    "techStack": ["HTML5", "SCSS", "JavaScript", "GitHub Actions"],
+    "roles": ["관리자 화면 UI·레이아웃 설계", "컴포넌트 퍼블리싱", "화면별 인터랙션 구현"],
+    "achievements": [
+      "로그인·회원·반려동물·멤버십·포인트·쿠폰·배너·알림·콘텐츠·운영자 등 업무 도메인별 관리 화면을 일관된 UI 규칙으로 마크업·구현",
+      "UI 가이드(레이아웃·폼·버튼·테이블·팝업)와 작업·버전 추적용 목록을 두어 협업·검수 기준 정리",
+      "AG Grid로 정렬·필터·셀 편집 등이 필요한 데이터 테이블·폼형 그리드 화면 다수 구현",
+      "단일·기간·일시·월·월 범위 등 입력 유형에 맞는 날짜·시간·월 피커를 구성하고 재사용 가능한 공통 스크립트로 유지보수성 확보",
+      "입력 제한·금액 콤마·레이어·모달·이미지 뷰어 등 관리자 업무에 필요한 공통 UX 패턴을 스크립트로 모듈화"
+    ],
+    "description": "SKT 에이닷 펫 서비스의 관리자 페이지 전반을 설계하고 구현한 Admin UI 프로젝트입니다."
+  },
+  {
+    "id": "adot-pet-front",
+    "name": "SKT 에이닷 펫 프론트 UI",
+    "thumbnail": [
+      "/img/portfolio/img_adotpet_front.png",
+      "/img/portfolio/img_adotpet_front_02.png",
+      "/img/portfolio/img_adotpet_front_03.png",
+      "/img/portfolio/img_adotpet_front_04.png",
+      "/img/portfolio/img_adotpet_front_05.png"
+    ],
+    "links": [],
+    "tags": ["HTML5", "CSS3", "JavaScript"],
+    "period": "2025.07 ~ 2025.12",
+    "techStack": ["HTML5", "CSS3", "JavaScript", "모바일 웹뷰 대응 마크업"],
+    "roles": ["UI 컴포넌트 설계·퍼블리싱", "공통 인터랙션·폼 동작 정의"],
+    "achievements": [
+      "재사용 가능한 컴포넌트 단위로 UI를 정리하고, 팀 공유용 컴포넌트 가이드를 구축·유지하여 화면 간 일관성과 작업 효율 확보",
+      "회원·마이페이지·라이프로그·펫스토리·펫케어 등 서비스 영역별 다수 화면을 시안·기획에 맞춰 마크업·스타일링",
+      "모바일 앱/웹뷰 환경을 고려한 접근·뷰포트 대응 UI 구현",
+      "커스텀 데이트피커(단일·기간·시간 케이스) 스타일·동작 정의 및 년·월 선택(먼스피커) UX·조작 로직 구현",
+      "입력 필드별 검증·제한·보조 UI(알림·토스트·로딩 등)를 공통 스크립트에 모아 폼·팝업 패턴 표준화"
+    ],
+    "description": "SKT 에이닷 펫 서비스 프론트엔드 UI를 모바일 웹뷰 환경에 맞춰 컴포넌트 기반으로 구현한 프로젝트입니다."
+  },
+  {
+    "id": "xcaliber",
+    "name": "SKT DX Cloud 수의 진단 플랫폼 X Caliber",
+    "thumbnail": [
+      "/img/portfolio/img_skt_xcaliber.png",
+      "/img/portfolio/img_skt_xcaliber_02.png",
+      "/img/portfolio/img_skt_xcaliber_03.png",
+      "/img/portfolio/img_skt_xcaliber_04.png",
+      "/img/portfolio/img_skt_xcaliber_05.png"
+    ],
+    "links": [],
+    "tags": ["HTML5", "SCSS", "JavaScript"],
+    "period": "2025.01 ~ 2025.10",
+    "techStack": ["HTML5", "SCSS", "JavaScript", "Node.js"],
+    "roles": ["UI 컴포넌트 설계/퍼블리싱", "인터랙션 스크립트 구현", "운영형 화면 유지보수"],
+    "achievements": [
+      "공통 UI 가이드 체계를 정비하고 버튼·폼·탭·아코디언·레이어팝업·토스트 등 재사용 컴포넌트 기반 퍼블리싱 표준 구축",
+      "날짜/기간 선택·범위 슬라이더 등 사용자 입력 컴포넌트의 동작 규칙을 스크립트로 구현해 화면 일관성과 사용성 강화",
+      "다국어/다화면 운영 이슈에 대응하며 대규모 화면 목록을 지속 관리, 기능 추가와 UI 변경을 빠르게 반영 가능한 구조로 개선",
+      "PDF 리포트 화면 퍼블리싱 고도화: 표지/목차/검진 결과 섹션 구성, 페이지 브레이크 대응, 차트 렌더링 이후 PDF 변환 흐름까지 연계해 출력 품질 안정화"
+    ],
+    "description": "SKT DX Cloud 기반 수의 진단 플랫폼의 프론트엔드 UI를 구축하고 운영 유지보수를 담당한 프로젝트입니다."
+  },
+  {
+    "id": "mir9",
+    "name": "mir9",
+    "thumbnail": "/img/portfolio/img_mir9.jpg",
+    "links": [
+      {
+        "label": "Live",
+        "url": "https://mir9.co.kr/"
+      }
+    ],
+    "tags": ["HTML5", "CSS3", "SCSS", "jQuery", "반응형"],
+    "period": "",
+    "techStack": ["HTML5", "CSS3", "SCSS", "jQuery", "GSAP"],
+    "roles": ["반응형 웹 퍼블리싱", "UI 인터랙션 개발"],
+    "achievements": ["크로스 브라우저 호환성 확보", "모바일 최적화 반응형 레이아웃 구현"],
+    "description": "mir9 기업 웹사이트 반응형 퍼블리싱 및 UI 인터랙션 개발"
+  },
+  {
+    "id": "klb",
+    "name": "KLB Logistics",
+    "thumbnail": "/img/portfolio/img_klb.jpg",
+    "links": [
+      {
+        "label": "Dev",
+        "url": "http://klb.uni-net.co.kr/"
+      }
+    ],
+    "tags": ["HTML5", "CSS3", "SCSS", "jQuery", "반응형"],
+    "period": "",
+    "techStack": ["HTML5", "CSS3", "SCSS", "jQuery"],
+    "roles": ["반응형 웹 퍼블리싱", "UI 인터랙션 개발"],
+    "achievements": ["물류 기업 특성에 맞는 UI 설계", "모바일 반응형 완성도 향상"],
+    "description": "KLB Logistics 기업 웹사이트 반응형 퍼블리싱"
+  },
+  {
+    "id": "turbowin",
+    "name": "Turbowin",
+    "thumbnail": "/img/portfolio/img_turbowin.jpg",
+    "links": [
+      {
+        "label": "Dev",
+        "url": "http://turbowin.uni-net.co.kr/"
+      }
+    ],
+    "tags": ["HTML5", "CSS3", "SCSS", "jQuery", "반응형"],
+    "period": "",
+    "techStack": ["HTML5", "CSS3", "SCSS", "jQuery", "GSAP"],
+    "roles": ["반응형 웹 퍼블리싱", "UI 인터랙션 개발"],
+    "achievements": ["스크롤 기반 인터랙션 구현", "반응형 레이아웃 완성"],
+    "description": "Turbowin 기업 웹사이트 퍼블리싱 및 인터랙션 개발"
+  },
+  {
+    "id": "dkm",
+    "name": "DKM Motor",
+    "thumbnail": "/img/portfolio/img_dkm.jpg",
+    "links": [
+      {
+        "label": "Dev",
+        "url": "http://dkmmotor.uni-net.co.kr/"
+      }
+    ],
+    "tags": ["HTML5", "CSS3", "SCSS", "jQuery", "반응형"],
+    "period": "",
+    "techStack": ["HTML5", "CSS3", "SCSS", "jQuery"],
+    "roles": ["반응형 웹 퍼블리싱", "UI 인터랙션 개발"],
+    "achievements": ["자동차 부품 기업 특성의 UI 구현", "크로스 브라우저 지원"],
+    "description": "DKM Motor 기업 웹사이트 반응형 퍼블리싱"
+  },
+  {
+    "id": "jeiotech",
+    "name": "JEIOtech",
+    "thumbnail": "/img/portfolio/img_jeiotech.jpg",
+    "links": [
+      {
+        "label": "Dev",
+        "url": "http://jeiotech.uni-net.co.kr/"
+      }
+    ],
+    "tags": ["HTML5", "CSS3", "SCSS", "jQuery", "반응형"],
+    "period": "",
+    "techStack": ["HTML5", "CSS3", "SCSS", "jQuery"],
+    "roles": ["반응형 웹 퍼블리싱", "UI 인터랙션 개발"],
+    "achievements": [
+      "복잡한 계층 구조의 실험 장비 카탈로그 및 상세 페이지 퍼블리싱",
+      "사용자 편의를 고려한 제품 간 비교하기(Comparison) 기능 UI 구현",
+      "다양한 검색 필터 및 속성 선택 UI의 컴포넌트화"
+    ],
+    "description": "수백 가지의 제품군을 사용자가 쉽게 탐색할 수 있도록 카테고리 내비게이션과 필터 기능을 최적화"
+  },
+  {
+    "id": "coasiacm",
+    "name": "CoAsia CM",
+    "thumbnail": "/img/portfolio/img_coasiacm.jpg",
+    "links": [
+      {
+        "label": "Live",
+        "url": "https://www.coasiacm.com/"
+      }
+    ],
+    "tags": ["HTML5", "CSS3", "SCSS", "jQuery", "반응형"],
+    "period": "",
+    "techStack": ["HTML5", "CSS3", "SCSS", "jQuery", "GSAP"],
+    "roles": ["반응형 웹 퍼블리싱", "UI 인터랙션 개발"],
+    "achievements": ["글로벌 기업 수준의 UI 완성도", "다국어 레이아웃 대응"],
+    "description": "CoAsia CM 글로벌 기업 웹사이트 반응형 퍼블리싱"
+  },
+  {
+    "id": "saladdays",
+    "name": "Salad Days",
+    "thumbnail": "/img/portfolio/img_saladdays.jpg",
+    "links": [
+      {
+        "label": "Live",
+        "url": "http://saladdays.co.kr/"
+      }
+    ],
+    "tags": ["HTML5", "CSS3", "SCSS", "jQuery", "반응형"],
+    "period": "",
+    "techStack": ["HTML5", "CSS3", "SCSS", "jQuery"],
+    "roles": ["반응형 웹 퍼블리싱", "UI 인터랙션 개발"],
+    "achievements": ["감성적인 브랜드 톤 UI 구현", "모바일 최적화"],
+    "description": "Salad Days 브랜드 웹사이트 퍼블리싱"
+  },
+  {
+    "id": "thomas",
+    "name": "Thomas Engineering",
+    "thumbnail": "/img/portfolio/img_thomas.jpg",
+    "links": [
+      {
+        "label": "Live",
+        "url": "https://thompod.co.kr/"
+      }
+    ],
+    "tags": ["HTML5", "CSS3", "SCSS", "jQuery", "반응형"],
+    "period": "",
+    "techStack": ["HTML5", "CSS3", "SCSS", "jQuery"],
+    "roles": ["반응형 웹 퍼블리싱", "UI 인터랙션 개발"],
+    "achievements": ["엔지니어링 기업 전문성 반영 UI", "크로스 브라우저 호환"],
+    "description": "Thomas Engineering 기업 웹사이트 퍼블리싱"
+  },
+  {
+    "id": "kosmo",
+    "name": "한국소프트웨어인재개발원",
+    "thumbnail": "/img/portfolio/img_kosmo.jpg",
+    "links": [
+      {
+        "label": "Live",
+        "url": "https://www.ikosmo.co.kr/"
+      }
+    ],
+    "tags": ["HTML5", "CSS3", "SCSS", "jQuery", "반응형"],
+    "period": "",
+    "techStack": ["HTML5", "CSS3", "SCSS", "jQuery"],
+    "roles": ["반응형 웹 퍼블리싱", "UI 인터랙션 개발"],
+    "achievements": ["교육기관 특성의 정보 구조 설계", "접근성 고려 마크업"],
+    "description": "한국소프트웨어인재개발원 웹사이트 퍼블리싱"
+  },
+  {
+    "id": "oricorn",
+    "name": "ORICORN",
+    "thumbnail": "/img/portfolio/img_oricorn.jpg",
+    "links": [
+      {
+        "label": "Live",
+        "url": "http://oricorncorp.com/"
+      }
+    ],
+    "tags": ["HTML5", "CSS3", "SCSS", "jQuery", "반응형"],
+    "period": "",
+    "techStack": ["HTML5", "CSS3", "SCSS", "jQuery"],
+    "roles": ["반응형 웹 퍼블리싱", "UI 인터랙션 개발"],
+    "achievements": ["스타트업 브랜드 아이덴티티 반영", "반응형 레이아웃 완성"],
+    "description": "ORICORN 기업 웹사이트 퍼블리싱"
+  },
+  {
+    "id": "tscns",
+    "name": "태성 CNS",
+    "thumbnail": "/img/portfolio/img_tscns.jpg",
+    "links": [
+      {
+        "label": "Live",
+        "url": "https://www.taeseongcns.co.kr/"
+      }
+    ],
+    "tags": ["HTML5", "CSS3", "SCSS", "jQuery", "반응형"],
+    "period": "",
+    "techStack": ["HTML5", "CSS3", "SCSS", "jQuery"],
+    "roles": ["반응형 웹 퍼블리싱", "UI 인터랙션 개발"],
+    "achievements": ["IT 기업 전문성 느껴지는 UI 구현"],
+    "description": "태성 CNS 기업 웹사이트 퍼블리싱"
+  },
+  {
+    "id": "cloudike",
+    "name": "CLOUDIKE",
+    "thumbnail": "/img/portfolio/img_cloudike.jpg",
+    "links": [
+      {
+        "label": "Live",
+        "url": "https://www.cloudike.co.kr/"
+      }
+    ],
+    "tags": ["HTML5", "CSS3", "SCSS", "jQuery", "반응형"],
+    "period": "",
+    "techStack": ["HTML5", "CSS3", "SCSS", "jQuery", "GSAP"],
+    "roles": ["반응형 웹 퍼블리싱", "UI 인터랙션 개발"],
+    "achievements": ["클라우드 서비스 특성의 모던 UI", "애니메이션 인터랙션 구현"],
+    "description": "CLOUDIKE 클라우드 서비스 웹사이트 퍼블리싱"
+  },
+  {
+    "id": "mobiis",
+    "name": "mobiis",
+    "thumbnail": "/img/portfolio/img_mobiis.jpg",
+    "links": [
+      {
+        "label": "Live",
+        "url": "https://www.mobiis.com/"
+      }
+    ],
+    "tags": ["HTML5", "CSS3", "SCSS", "jQuery", "반응형"],
+    "period": "",
+    "techStack": ["HTML5", "CSS3", "SCSS", "jQuery"],
+    "roles": ["반응형 웹 퍼블리싱", "UI 인터랙션 개발"],
+    "achievements": ["모빌리티 기업 브랜드 UI 구현", "반응형 완성"],
+    "description": "mobiis 기업 웹사이트 반응형 퍼블리싱"
+  },
+  {
+    "id": "naviworks",
+    "name": "Naviworks",
+    "thumbnail": "/img/portfolio/img_naviworks.jpg",
+    "links": [
+      {
+        "label": "Live",
+        "url": "https://www.naviworks.com/"
+      }
+    ],
+    "tags": ["HTML5", "CSS3", "SCSS", "jQuery", "반응형"],
+    "period": "",
+    "techStack": ["HTML5", "CSS3", "SCSS", "jQuery", "GSAP"],
+    "roles": ["반응형 웹 퍼블리싱", "UI 인터랙션 개발"],
+    "achievements": ["네비게이션 시스템 기업 UI", "스크롤 인터랙션 구현"],
+    "description": "Naviworks 기업 웹사이트 퍼블리싱"
+  },
+  {
+    "id": "apulsetech",
+    "name": "Apulsetech",
+    "thumbnail": "/img/portfolio/img_apulsetech.jpg",
+    "links": [
+      {
+        "label": "Live",
+        "url": "https://www.apulsetech.com/"
+      }
+    ],
+    "tags": ["HTML5", "CSS3", "SCSS", "jQuery", "반응형"],
+    "period": "",
+    "techStack": ["HTML5", "CSS3", "SCSS", "jQuery"],
+    "roles": ["반응형 웹 퍼블리싱", "UI 인터랙션 개발"],
+    "achievements": ["기술 기업 전문 UI 완성도 향상"],
+    "description": "Apulsetech 기업 웹사이트 퍼블리싱"
+  },
+  {
+    "id": "fitme",
+    "name": "FITme",
+    "thumbnail": "/img/portfolio/img_fitme.jpg",
+    "links": [
+      {
+        "label": "Live",
+        "url": "https://fitme3d.kr/"
+      }
+    ],
+    "tags": ["HTML5", "CSS3", "SCSS", "jQuery", "반응형"],
+    "period": "",
+    "techStack": ["HTML5", "CSS3", "SCSS", "jQuery", "GSAP"],
+    "roles": ["반응형 웹 퍼블리싱", "UI 인터랙션 개발"],
+    "achievements": ["3D 피팅 서비스 특성의 시각적 UI", "모던 인터랙션 구현"],
+    "description": "FITme 3D 피팅 서비스 웹사이트 퍼블리싱"
+  },
+  {
+    "id": "jjtools",
+    "name": "JJTOOLS",
+    "thumbnail": "/img/portfolio/img_jjtools.jpg",
+    "links": [
+      {
+        "label": "Live",
+        "url": "https://jjtools.co.kr/"
+      }
+    ],
+    "tags": ["HTML5", "CSS3", "SCSS", "jQuery", "반응형"],
+    "period": "",
+    "techStack": ["HTML5", "CSS3", "SCSS", "jQuery"],
+    "roles": ["반응형 웹 퍼블리싱", "UI 인터랙션 개발"],
+    "achievements": ["공구 쇼핑몰 UI/UX 구조 설계", "상품 목록 반응형 최적화"],
+    "description": "JJTOOLS 쇼핑몰 웹사이트 퍼블리싱"
+  },
+  {
+    "id": "ispark",
+    "name": "ISPark",
+    "thumbnail": "/img/portfolio/img_ispark.jpg",
+    "links": [
+      {
+        "label": "Live",
+        "url": "https://ispark.kr/"
+      }
+    ],
+    "tags": ["HTML5", "CSS3", "SCSS", "jQuery", "반응형"],
+    "period": "",
+    "techStack": ["HTML5", "CSS3", "SCSS", "jQuery"],
+    "roles": ["반응형 웹 퍼블리싱", "UI 인터랙션 개발"],
+    "achievements": ["주차 서비스 플랫폼 UI 구현"],
+    "description": "ISPark 주차 서비스 웹사이트 퍼블리싱"
+  },
+  {
+    "id": "motioncontrol",
+    "name": "국제모션컨트롤산업전",
+    "thumbnail": "/img/portfolio/img_motioncontrol.jpg",
+    "links": [
+      {
+        "label": "Live",
+        "url": "https://www.motioncontrol.kr/"
+      }
+    ],
+    "tags": ["HTML5", "CSS3", "SCSS", "jQuery", "반응형"],
+    "period": "",
+    "techStack": ["HTML5", "CSS3", "SCSS", "jQuery"],
+    "roles": ["반응형 웹 퍼블리싱", "UI 인터랙션 개발"],
+    "achievements": ["전시회 홈페이지 정보 구조 설계", "다양한 콘텐츠 레이아웃 구현"],
+    "description": "국제모션컨트롤산업전 공식 웹사이트 퍼블리싱"
+  },
+  {
+    "id": "samhyun",
+    "name": "SAMHYUN",
+    "thumbnail": "/img/portfolio/img_samhyun.jpg",
+    "links": [
+      {
+        "label": "Live",
+        "url": "https://www.samhyun.co.kr/"
+      }
+    ],
+    "tags": ["HTML5", "CSS3", "SCSS", "jQuery", "반응형"],
+    "period": "",
+    "techStack": ["HTML5", "CSS3", "SCSS", "jQuery"],
+    "roles": ["반응형 웹 퍼블리싱", "UI 인터랙션 개발"],
+    "achievements": ["건설 기업 전문성 반영 UI"],
+    "description": "SAMHYUN 기업 웹사이트 퍼블리싱"
+  },
+  {
+    "id": "kpus",
+    "name": "한국폴리우레탄학회",
+    "thumbnail": "/img/portfolio/img_kpus.jpg",
+    "links": [
+      {
+        "label": "Live",
+        "url": "https://www.kpus.or.kr/"
+      }
+    ],
+    "tags": ["HTML5", "CSS3", "SCSS", "jQuery", "반응형"],
+    "period": "",
+    "techStack": ["HTML5", "CSS3", "SCSS", "jQuery"],
+    "roles": ["반응형 웹 퍼블리싱", "UI 인터랙션 개발"],
+    "achievements": ["학회 웹사이트 정보 접근성 강화", "반응형 레이아웃 완성"],
+    "description": "한국폴리우레탄학회 공식 웹사이트 퍼블리싱"
+  },
+  {
+    "id": "gvalley",
+    "name": "사단법인 G밸리산업협회",
+    "thumbnail": "/img/portfolio/img_gvalley.jpg",
+    "links": [
+      {
+        "label": "Live",
+        "url": "https://g-valley.org/"
+      }
+    ],
+    "tags": ["HTML5", "CSS3", "SCSS", "jQuery", "반응형"],
+    "period": "",
+    "techStack": ["HTML5", "CSS3", "SCSS", "jQuery"],
+    "roles": ["반응형 웹 퍼블리싱", "UI 인터랙션 개발"],
+    "achievements": ["협회 공식 웹사이트 UI 완성", "정보 계층 구조 설계"],
+    "description": "사단법인 G밸리산업협회 웹사이트 퍼블리싱"
+  },
+  {
+    "id": "mesacosa",
+    "name": "MESACOSA",
+    "thumbnail": "/img/portfolio/img_mesacosa.jpg",
+    "links": [
+      {
+        "label": "Live",
+        "url": "https://www.mesacosa.co.kr/"
+      }
+    ],
+    "tags": ["HTML5", "CSS3", "SCSS", "jQuery", "반응형"],
+    "period": "",
+    "techStack": ["HTML5", "CSS3", "SCSS", "jQuery"],
+    "roles": ["반응형 웹 퍼블리싱", "UI 인터랙션 개발"],
+    "achievements": ["뷰티 브랜드 감성 UI 구현", "모바일 최적화"],
+    "description": "MESACOSA 뷰티 브랜드 웹사이트 퍼블리싱"
+  },
+  {
+    "id": "pie",
+    "name": "PIE",
+    "thumbnail": "/img/portfolio/img_pie.jpg",
+    "links": [
+      {
+        "label": "Live",
+        "url": "http://www.piegroup.co.kr/"
+      }
+    ],
+    "tags": ["HTML5", "CSS3", "SCSS", "jQuery", "반응형"],
+    "period": "",
+    "techStack": ["HTML5", "CSS3", "SCSS", "jQuery"],
+    "roles": ["반응형 웹 퍼블리싱", "UI 인터랙션 개발"],
+    "achievements": ["건설 그룹 기업 UI 완성도 향상"],
+    "description": "PIE 기업 웹사이트 퍼블리싱"
+  },
+  {
+    "id": "pribit",
+    "name": "PRIBIT",
+    "thumbnail": "/img/portfolio/img_pribit.jpg",
+    "links": [
+      {
+        "label": "Live",
+        "url": "https://www.pribit.com/"
+      }
+    ],
+    "tags": ["HTML5", "CSS3", "SCSS", "jQuery", "반응형"],
+    "period": "",
+    "techStack": ["HTML5", "CSS3", "SCSS", "jQuery", "GSAP"],
+    "roles": ["반응형 웹 퍼블리싱", "UI 인터랙션 개발"],
+    "achievements": ["IT 보안 서비스 전문 UI", "인터랙티브 애니메이션 구현"],
+    "description": "PRIBIT 보안 서비스 웹사이트 퍼블리싱"
+  },
+  {
+    "id": "emrocloud",
+    "name": "emro CLOUD",
+    "thumbnail": "/img/portfolio/img_emrocloud.jpg",
+    "links": [
+      {
+        "label": "Dev",
+        "url": "http://emro.mir9.kr/"
+      }
+    ],
+    "tags": ["HTML5", "CSS3", "SCSS", "jQuery", "반응형"],
+    "period": "",
+    "techStack": ["HTML5", "CSS3", "SCSS", "jQuery"],
+    "roles": ["반응형 웹 퍼블리싱", "UI 인터랙션 개발"],
+    "achievements": ["클라우드 ERP 서비스 UI 완성"],
+    "description": "emro CLOUD ERP 서비스 웹사이트 퍼블리싱"
+  },
+  {
+    "id": "jkc",
+    "name": "JKC CORPORATION",
+    "thumbnail": "/img/portfolio/img_jkc.jpg",
+    "links": [
+      {
+        "label": "Live",
+        "url": "https://www.jkccorp.co.kr/"
+      }
+    ],
+    "tags": ["HTML5", "CSS3", "SCSS", "jQuery", "반응형"],
+    "period": "",
+    "techStack": ["HTML5", "CSS3", "SCSS", "jQuery"],
+    "roles": ["반응형 웹 퍼블리싱", "UI 인터랙션 개발"],
+    "achievements": ["기업 웹사이트 리뉴얼", "모던 UI 적용"],
+    "description": "JKC CORPORATION 기업 웹사이트 퍼블리싱"
+  },
+  {
+    "id": "game_roulette",
+    "name": "[이벤트] 룰렛",
+    "thumbnail": "/img/portfolio/img_game_roulette.jpg",
+    "links": [
+      {
+        "label": "Demo",
+        "url": "http://multi-backup.woobi.co.kr/backup/game-event/roulette/"
+      }
+    ],
+    "tags": ["HTML5", "CSS3", "JavaScript", "Canvas", "이벤트"],
+    "period": "",
+    "techStack": ["HTML5", "CSS3", "JavaScript", "Canvas API"],
+    "roles": ["UI 인터랙션 개발", "캔버스 애니메이션 구현"],
+    "achievements": ["Canvas API를 활용한 룰렛 게임 구현", "이벤트 당첨 로직 개발"],
+    "description": "이벤트 페이지용 룰렛 게임 인터랙션 개발"
+  },
+  {
+    "id": "game_dice",
+    "name": "[이벤트] 주사위",
+    "thumbnail": "/img/portfolio/img_game_dice.jpg",
+    "links": [
+      {
+        "label": "Demo",
+        "url": "http://multi-backup.woobi.co.kr/backup/game-event/dice/"
+      }
+    ],
+    "tags": ["HTML5", "CSS3", "JavaScript", "이벤트"],
+    "period": "",
+    "techStack": ["HTML5", "CSS3", "JavaScript", "CSS 3D Transform"],
+    "roles": ["UI 인터랙션 개발", "3D CSS 애니메이션"],
+    "achievements": ["CSS 3D Transform으로 주사위 회전 구현", "이벤트 게임 로직 개발"],
+    "description": "이벤트 페이지용 주사위 게임 인터랙션 개발"
+  },
+  {
+    "id": "game_scratch",
+    "name": "[이벤트] 스크래치",
+    "thumbnail": "/img/portfolio/img_game_scratch.jpg",
+    "links": [
+      {
+        "label": "Demo",
+        "url": "http://multi-backup.woobi.co.kr/backup/game-event/scratch/"
+      }
+    ],
+    "tags": ["HTML5", "CSS3", "JavaScript", "Canvas", "이벤트"],
+    "period": "",
+    "techStack": ["HTML5", "CSS3", "JavaScript", "Canvas API"],
+    "roles": ["UI 인터랙션 개발", "터치 이벤트 처리"],
+    "achievements": ["Canvas API 스크래치 효과 구현", "모바일 터치 이벤트 처리"],
+    "description": "이벤트 페이지용 스크래치 복권 인터랙션 개발"
+  },
+  {
+    "id": "game_slotmachine",
+    "name": "[이벤트] 슬롯머신",
+    "thumbnail": "/img/portfolio/img_game_slotmachine.jpg",
+    "links": [
+      {
+        "label": "Demo",
+        "url": "http://multi-backup.woobi.co.kr/backup/game-event/slotmachine/"
+      }
+    ],
+    "tags": ["HTML5", "CSS3", "JavaScript", "이벤트"],
+    "period": "",
+    "techStack": ["HTML5", "CSS3", "JavaScript"],
+    "roles": ["UI 인터랙션 개발", "슬롯머신 애니메이션 구현"],
+    "achievements": ["슬롯머신 회전 애니메이션 구현", "당첨 판정 로직 개발"],
+    "description": "이벤트 페이지용 슬롯머신 게임 인터랙션 개발"
+  },
+  {
+    "id": "lksglobal",
+    "name": "LKS GLOBAL",
+    "thumbnail": "/img/portfolio/img_lksglobal.jpg",
+    "links": [
+      {
+        "label": "Live",
+        "url": "http://www.lksglobal.net/"
+      }
+    ],
+    "tags": ["HTML5", "CSS3", "SCSS", "jQuery", "반응형"],
+    "period": "",
+    "techStack": ["HTML5", "CSS3", "SCSS", "jQuery"],
+    "roles": ["반응형 웹 퍼블리싱", "UI 인터랙션 개발"],
+    "achievements": ["글로벌 기업 다국어 레이아웃 대응"],
+    "description": "LKS GLOBAL 기업 웹사이트 퍼블리싱"
+  },
+  {
+    "id": "solsion",
+    "name": "SOLSION Biomedical",
+    "thumbnail": "/img/portfolio/img_solsion.jpg",
+    "links": [
+      {
+        "label": "Live",
+        "url": "http://solsion.com/"
+      }
+    ],
+    "tags": ["HTML5", "CSS3", "SCSS", "jQuery", "반응형"],
+    "period": "",
+    "techStack": ["HTML5", "CSS3", "SCSS", "jQuery"],
+    "roles": ["반응형 웹 퍼블리싱", "UI 인터랙션 개발"],
+    "achievements": ["의료 바이오 기업 전문 UI 완성"],
+    "description": "SOLSION Biomedical 기업 웹사이트 퍼블리싱"
+  },
+  {
+    "id": "tscell",
+    "name": "TSCellBio",
+    "thumbnail": "/img/portfolio/img_tscell.jpg",
+    "links": [
+      {
+        "label": "Dev",
+        "url": "http://tscell.uni-net.co.kr/"
+      }
+    ],
+    "tags": ["HTML5", "CSS3", "SCSS", "jQuery", "반응형"],
+    "period": "",
+    "techStack": ["HTML5", "CSS3", "SCSS", "jQuery"],
+    "roles": ["반응형 웹 퍼블리싱", "UI 인터랙션 개발"],
+    "achievements": ["바이오 셀 기업 과학적 UI 표현"],
+    "description": "TSCellBio 기업 웹사이트 퍼블리싱"
+  },
+  {
+    "id": "hexainnoheal",
+    "name": "HEXAINNOHEAL",
+    "thumbnail": "/img/portfolio/img_hexainnoheal.jpg",
+    "links": [
+      {
+        "label": "Live",
+        "url": "http://www.hexainnoheal.com/"
+      }
+    ],
+    "tags": ["HTML5", "CSS3", "SCSS", "jQuery", "반응형"],
+    "period": "",
+    "techStack": ["HTML5", "CSS3", "SCSS", "jQuery"],
+    "roles": ["반응형 웹 퍼블리싱", "UI 인터랙션 개발"],
+    "achievements": ["헬스케어 기업 신뢰 느껴지는 UI"],
+    "description": "HEXAINNOHEAL 헬스케어 기업 웹사이트 퍼블리싱"
+  }
+]

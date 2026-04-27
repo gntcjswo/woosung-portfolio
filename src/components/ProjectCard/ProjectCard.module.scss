@@ -1,0 +1,127 @@
+@use '@/styles/shared' as *;
+
+.card {
+  width: 100%;
+  min-width: 0;
+  background: $color-surface;
+  border: 1px solid $color-border;
+  border-radius: $radius-lg;
+  overflow: hidden;
+  cursor: pointer;
+  transition: border-color $transition-base, transform $transition-base, box-shadow $transition-base;
+
+  &:hover {
+    border-color: $color-border-hover;
+    transform: translateY(-4px);
+    box-shadow: 0 24px 48px rgba(0, 0, 0, 0.5);
+
+    .overlay {
+      opacity: 1;
+    }
+
+    .thumbnail img {
+      transform: scale(1.05);
+    }
+  }
+}
+
+.thumbnail {
+  position: relative;
+  aspect-ratio: 16 / 10;
+  overflow: hidden;
+  background: $color-surface-2;
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+  }
+}
+
+.overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(108, 99, 255, 0.75);
+  @include flex-center;
+  opacity: 0;
+  transition: opacity $transition-base;
+}
+
+.viewDetail {
+  font-size: 14px;
+  font-weight: 600;
+  color: $color-white;
+  letter-spacing: 0.05em;
+  padding: $spacing-xs $spacing-lg;
+  border: 2px solid rgba(255, 255, 255, 0.6);
+  border-radius: $radius-full;
+}
+
+.body {
+  padding: $spacing-md;
+  display: flex;
+  flex-direction: column;
+  gap: $spacing-xs;
+}
+
+.name {
+  font-size: 15px;
+  font-weight: 600;
+  color: $color-primary;
+  @include ellipsis(1);
+}
+
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+}
+
+.tag {
+  font-size: 11px;
+  font-weight: 500;
+  padding: 2px 8px;
+  background: $color-accent-dim;
+  color: $color-accent;
+  border-radius: $radius-full;
+  letter-spacing: 0.02em;
+}
+
+.tagMore {
+  font-size: 11px;
+  font-weight: 500;
+  padding: 2px 8px;
+  color: $color-muted;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: $radius-full;
+}
+
+.links {
+  display: flex;
+  gap: $spacing-xs;
+  margin-top: 4px;
+}
+
+.link {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 12px;
+  font-weight: 500;
+  color: $color-secondary;
+  padding: 4px 10px;
+  border: 1px solid $color-border;
+  border-radius: $radius-full;
+  transition: color $transition-fast, border-color $transition-fast;
+
+  svg {
+    width: 10px;
+    height: 10px;
+  }
+
+  &:hover {
+    color: $color-primary;
+    border-color: $color-border-hover;
+  }
+}

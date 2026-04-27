@@ -1,0 +1,107 @@
+@use '@/styles/shared' as *;
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: $spacing-lg;
+
+  @include mobile {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @include desktop {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  @include wide {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  > li {
+    min-width: 0;
+    display: flex;
+  }
+}
+
+.resultInfo {
+  display: flex;
+  align-items: baseline;
+  gap: 4px;
+  margin-bottom: $spacing-lg;
+}
+
+.count {
+  font-size: 24px;
+  font-weight: 700;
+  font-family: $font-family-en;
+  color: $color-primary;
+}
+
+.countLabel {
+  font-size: 14px;
+  color: $color-secondary;
+}
+
+.loadingGrid {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: $spacing-lg;
+
+  @include mobile {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @include desktop {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  @include wide {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  > div {
+    min-width: 0;
+  }
+}
+
+.skeleton {
+  aspect-ratio: 16 / 10;
+  background: linear-gradient(
+    90deg,
+    $color-surface 25%,
+    $color-surface-2 50%,
+    $color-surface 75%
+  );
+  background-size: 200% 100%;
+  border-radius: $radius-lg;
+  animation: shimmer 1.5s infinite;
+}
+
+@keyframes shimmer {
+  0% { background-position: 200% 0; }
+  100% { background-position: -200% 0; }
+}
+
+.errorState {
+  text-align: center;
+  padding: $spacing-3xl;
+  color: $color-secondary;
+}
+
+.empty {
+  @include flex-center;
+  flex-direction: column;
+  gap: $spacing-md;
+  padding: $spacing-3xl;
+  color: $color-muted;
+
+  svg {
+    width: 48px;
+    height: 48px;
+    opacity: 0.4;
+  }
+
+  p {
+    font-size: 15px;
+  }
+}
