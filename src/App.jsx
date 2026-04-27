@@ -20,11 +20,11 @@ export function App() {
       <BrowserRouter future={{ v7_relativeSplatPath: true, v7_startTransition: true }}>
         <Header />
         <Routes>
-          <Route path="/" element={<Navigate to="/portfolio" replace />} />
-          <Route path="/profile" element={<ProfilePage />} />
+          <Route path="/" element={<PortfolioPage />} />
           <Route path="/portfolio" element={<PortfolioPage />} />
+          <Route path="/profile" element={<ProfilePage />} />
           <Route path="/personal" element={<PersonalPage />} />
-          <Route path="*" element={<Navigate to="/portfolio" replace />} />
+          <Route path="*" element={<Navigate to="/" replace />} />
         </Routes>
       </BrowserRouter>
     </QueryClientProvider>

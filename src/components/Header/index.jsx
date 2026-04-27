@@ -33,7 +33,13 @@ export function Header() {
                 </li>
               ) : (
                 <li key={item.label}>
-                  <NavLink to={item.to} className={({ isActive }) => `${styles.navLink} ${isActive || location.pathname === item.to ? styles.active : ''}`}>
+                  <NavLink
+                    to={item.to}
+                    className={({ isActive }) => {
+                      const isPortfolioOnRoot = item.to === '/portfolio' && location.pathname === '/';
+                      return `${styles.navLink} ${isActive || isPortfolioOnRoot ? styles.active : ''}`;
+                    }}
+                  >
                     {item.label}
                   </NavLink>
                 </li>
