@@ -15,7 +15,7 @@ export function Header() {
     <header className={styles.header}>
       <div className={styles.inner}>
         <NavLink to='/' className={styles.logo} aria-label='홈으로 이동'>
-          <img src='/img/portfolio/logo.svg' alt='WOOSUNG' width={36} height={36} />
+          {/* <img src='/img/portfolio/logo.svg' alt='WOOSUNG' width={36} height={36} /> */}
           <span className={styles.logoText}>WOOSUNG</span>
         </NavLink>
 
