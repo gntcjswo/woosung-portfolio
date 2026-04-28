@@ -217,8 +217,8 @@
     "thumbnail": "/img/portfolio/img_klb.jpg",
     "links": [
       {
-        "label": "Dev",
-        "url": "http://klb.uni-net.co.kr/"
+        "label": "Live",
+        "url": "http://klbkorea.com/"
       }
     ],
     "tags": ["HTML5", "CSS3", "SCSS", "jQuery", "반응형"],
