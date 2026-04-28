@@ -58,6 +58,12 @@
   gap: $spacing-2xs;
 }
 
+@include below-mobile {
+  .githubLink {
+    display: none;
+  }
+}
+
 .navLink {
   display: flex;
   align-items: center;
@@ -68,7 +74,9 @@
   letter-spacing: 0.04em;
   color: $color-secondary;
   border-radius: $radius-sm;
-  transition: color $transition-fast, background-color $transition-fast;
+  transition:
+    color $transition-fast,
+    background-color $transition-fast;
 
   &:hover {
     color: $color-primary;

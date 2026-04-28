@@ -231,6 +231,20 @@
     vertical-align: top;
     line-height: 1.7;
   }
+
+  @include below-mobile {
+    &,
+    tbody,
+    tr,
+    th,
+    td {
+      display: block;
+    }
+
+    th {
+      text-align: left;
+    }
+  }
 }
 
 .techList {

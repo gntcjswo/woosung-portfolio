@@ -23,7 +23,7 @@ export function Header() {
           <ul className={styles.navList}>
             {NAV_ITEMS.map((item) =>
               item.external ? (
-                <li key={item.label}>
+                <li key={item.label} className={styles.githubLink}>
                   <a href={item.href} target='_blank' rel='noopener noreferrer' className={styles.navLink}>
                     {item.label}
                     <span className={styles.externalIcon} aria-hidden='true'>

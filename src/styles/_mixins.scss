@@ -2,19 +2,52 @@
 
 // Breakpoints (mobile-first)
 @mixin mobile {
-  @media (min-width: #{v.$bp-mobile}) { @content; }
+  @media (min-width: #{v.$bp-mobile}) {
+    @content;
+  }
 }
 
 @mixin tablet {
-  @media (min-width: #{v.$bp-tablet}) { @content; }
+  @media (min-width: #{v.$bp-tablet}) {
+    @content;
+  }
 }
 
 @mixin desktop {
-  @media (min-width: #{v.$bp-desktop}) { @content; }
+  @media (min-width: #{v.$bp-desktop}) {
+    @content;
+  }
 }
 
 @mixin wide {
-  @media (min-width: #{v.$bp-wide}) { @content; }
+  @media (min-width: #{v.$bp-wide}) {
+    @content;
+  }
+}
+
+// Breakpoints (desktop-first, max-width)
+@mixin below-mobile {
+  @media (max-width: #{v.$bp-mobile - 1px}) {
+    @content;
+  }
+}
+
+@mixin below-tablet {
+  @media (max-width: #{v.$bp-tablet - 1px}) {
+    @content;
+  }
+}
+
+@mixin below-desktop {
+  @media (max-width: #{v.$bp-desktop - 1px}) {
+    @content;
+  }
+}
+
+@mixin below-wide {
+  @media (max-width: #{v.$bp-wide - 1px}) {
+    @content;
+  }
 }
 
 // Flex utilities
@@ -67,7 +100,9 @@
 
 // Hover lift
 @mixin hover-lift {
-  transition: transform v.$transition-base, box-shadow v.$transition-base;
+  transition:
+    transform v.$transition-base,
+    box-shadow v.$transition-base;
 
   &:hover {
     transform: translateY(-4px);
