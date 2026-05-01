@@ -1,6 +1,8 @@
 import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom';
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
 import { Header } from '@/components/Header';
+import { ScrollToTop } from '@/components/ScrollToTop';
+import { TopButton } from '@/components/TopButton';
 import { ProfilePage } from '@/pages/ProfilePage';
 import { PortfolioPage } from '@/pages/PortfolioPage';
 import { PersonalPage } from '@/pages/PersonalPage';
@@ -18,6 +20,7 @@ export function App() {
   return (
     <QueryClientProvider client={queryClient}>
       <BrowserRouter future={{ v7_relativeSplatPath: true, v7_startTransition: true }}>
+        <ScrollToTop />
         <Header />
         <Routes>
           <Route path="/" element={<PortfolioPage />} />
@@ -26,6 +29,7 @@ export function App() {
           <Route path="/personal" element={<PersonalPage />} />
           <Route path="*" element={<Navigate to="/" replace />} />
         </Routes>
+        <TopButton />
       </BrowserRouter>
     </QueryClientProvider>
   );
