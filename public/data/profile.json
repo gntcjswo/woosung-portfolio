@@ -82,7 +82,7 @@
         "HTML5/CSS3/SCSS/jQuery 기반 반응형 웹 퍼블리싱",
         "크로스 브라우저 호환 마크업 개발 (IE 포함)",
         "시맨틱 HTML 및 웹 접근성 준수",
-        "GSAP 기반 공통 애니메이션 라이브러리 구축 — 솔루션 표준 채택",
+        "GSAP 기반 공통 애니메이션 라이브러리 구축 (솔루션 표준 채택)",
         "외부 API(YouTube, Kakao/Google/Naver Map) 연동 UI 구현"
       ]
     },
