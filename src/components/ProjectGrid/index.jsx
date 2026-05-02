@@ -1,4 +1,5 @@
-import { useMemo } from 'react';
+import { useMemo, useRef, useEffect } from 'react';
+import { gsap } from 'gsap';
 import { useFilterStore } from '@/stores/useFilterStore';
 import { ProjectCard } from '@/components/ProjectCard';
 import { FilterBar } from '@/components/FilterBar';
@@ -8,17 +9,32 @@ import styles from './ProjectGrid.module.scss';
 export function ProjectGrid({ useData, variant = 'portfolio' }) {
   const { data: projects, isLoading, isError } = useData();
   const { selectedTags, searchQuery } = useFilterStore();
+  const gridRef = useRef(null);
+  const hasAnimated = useRef(false);
 
   const filtered = useMemo(() => {
     if (!projects) return [];
     return projects.filter((project) => {
       const matchesSearch = project.name.toLowerCase().includes(searchQuery.toLowerCase());
-      const matchesTags =
-        selectedTags.length === 0 ||
-        selectedTags.every((tag) => project.tags.includes(tag));
+      const matchesTags = selectedTags.length === 0 || selectedTags.every((tag) => project.tags.includes(tag));
       return matchesSearch && matchesTags;
     });
   }, [projects, searchQuery, selectedTags]);
+
+  useEffect(() => {
+    if (isLoading || hasAnimated.current || !gridRef.current) return;
+    hasAnimated.current = true;
+    const cards = gridRef.current.querySelectorAll('article');
+    if (!cards.length) return;
+    gsap.from(Array.from(cards), {
+      opacity: 0,
+      y: 24,
+      duration: 0.5,
+      stagger: 0.05,
+      ease: 'power2.out',
+      clearProps: 'transform,opacity',
+    });
+  }, [isLoading]);
 
   if (isLoading) {
     return <Spinner />;
@@ -26,30 +42,30 @@ export function ProjectGrid({ useData, variant = 'portfolio' }) {
 
   if (isError) {
     return (
-      <div className={styles.errorState} role="alert">
+      <div className={styles.errorState} role='alert'>
         <p>데이터를 불러오는 중 오류가 발생했습니다.</p>
       </div>
     );
   }
 
   return (
-    <section aria-label="프로젝트 목록">
+    <section aria-label='프로젝트 목록'>
       <FilterBar variant={variant} />
-      <div className={styles.resultInfo} aria-live="polite" aria-atomic="true">
+      <div className={styles.resultInfo} aria-live='polite' aria-atomic='true'>
         <span className={styles.count}>{filtered.length}</span>
         <span className={styles.countLabel}>개의 프로젝트</span>
       </div>
 
       {filtered.length === 0 ? (
-        <div className={styles.empty} role="status">
-          <svg viewBox="0 0 48 48" fill="none" aria-hidden="true">
-            <circle cx="24" cy="24" r="20" stroke="currentColor" strokeWidth="1.5" />
-            <path d="M16 24h16M24 16v16" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" />
+        <div className={styles.empty} role='status'>
+          <svg viewBox='0 0 48 48' fill='none' aria-hidden='true'>
+            <circle cx='24' cy='24' r='20' stroke='currentColor' strokeWidth='1.5' />
+            <path d='M16 24h16M24 16v16' stroke='currentColor' strokeWidth='1.5' strokeLinecap='round' />
           </svg>
           <p>조건에 맞는 프로젝트가 없습니다.</p>
         </div>
       ) : (
-        <ul className={styles.grid}>
+        <ul ref={gridRef} className={styles.grid}>
           {filtered.map((project) => (
             <li key={project.id}>
               <ProjectCard project={project} />

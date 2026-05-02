@@ -1,5 +1,9 @@
+import { useRef, useEffect } from 'react';
 import { NavLink, useLocation } from 'react-router-dom';
+import { gsap } from 'gsap';
 import styles from './Header.module.scss';
+
+let headerAnimated = false;
 
 const NAV_ITEMS = [
   { label: 'Profile', to: '/profile' },
@@ -10,9 +14,21 @@ const NAV_ITEMS = [
 
 export function Header() {
   const location = useLocation();
+  const headerRef = useRef(null);
+
+  useEffect(() => {
+    if (headerAnimated || !headerRef.current) return;
+    headerAnimated = true;
+    gsap.from(headerRef.current, {
+      y: -80,
+      opacity: 0,
+      duration: 0.8,
+      ease: 'power3.out',
+    });
+  }, []);
 
   return (
-    <header className={styles.header}>
+    <header ref={headerRef} className={styles.header}>
       <div className={styles.inner}>
         <NavLink to='/' className={styles.logo} aria-label='홈으로 이동'>
           {/* <img src='/img/portfolio/logo.svg' alt='WOOSUNG' width={36} height={36} /> */}

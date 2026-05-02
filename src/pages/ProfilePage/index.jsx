@@ -1,4 +1,6 @@
+import { useRef } from 'react';
 import { useProfile } from '@/hooks/useProfile';
+import { useScrollReveal } from '@/hooks/useScrollReveal';
 import styles from './ProfilePage.module.scss';
 
 function calcCareer(startDateStr) {
@@ -14,6 +16,8 @@ function calcCareer(startDateStr) {
 
 export function ProfilePage() {
   const { data: profile, isLoading, isError } = useProfile();
+  const innerRef = useRef(null);
+  useScrollReveal(innerRef, !isLoading && !!profile);
 
   if (isLoading) {
     return (
@@ -41,9 +45,7 @@ export function ProfilePage() {
 
   return (
     <main className={styles.page}>
-      <div className={styles.inner}>
-
-        {/* Hero */}
+      <div ref={innerRef} className={styles.inner}>
         <section className={styles.hero} aria-label="소개">
           <div className={styles.heroLeft}>
             <div className={styles.badge}>Frontend Developer &amp; Web Publisher</div>
