@@ -2,6 +2,7 @@ import { useMemo } from 'react';
 import { useFilterStore } from '@/stores/useFilterStore';
 import { ProjectCard } from '@/components/ProjectCard';
 import { FilterBar } from '@/components/FilterBar';
+import { Spinner } from '@/components/Spinner';
 import styles from './ProjectGrid.module.scss';
 
 export function ProjectGrid({ useData, variant = 'portfolio' }) {
@@ -20,13 +21,7 @@ export function ProjectGrid({ useData, variant = 'portfolio' }) {
   }, [projects, searchQuery, selectedTags]);
 
   if (isLoading) {
-    return (
-      <div className={styles.loadingGrid}>
-        {Array.from({ length: 8 }).map((_, i) => (
-          <div key={`skeleton-${i}`} className={styles.skeleton} aria-hidden="true" />
-        ))}
-      </div>
-    );
+    return <Spinner />;
   }
 
   if (isError) {
