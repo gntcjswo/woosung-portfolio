@@ -13,7 +13,12 @@
     "period": "",
     "techStack": ["HTML5", "CSS3", "SCSS", "jQuery", "GSAP"],
     "roles": ["반응형 웹 퍼블리싱", "UI 인터랙션 개발"],
-    "achievements": ["크로스 브라우저 호환성 확보", "모바일 최적화 반응형 레이아웃 구현"],
+    "achievements": [
+      "에이전시의 창의성을 드러내기 위해 After Effects를 활용하여 SVG 애니메이션을 제작하고, 이를 Bodymovin을 통해 JSON으로 추출하여 Lottie 라이브러리로 구현",
+      "커스텀 로딩 애니메이션을 제작하고, 페이지 전환 시 트랜지션 효과를 정교하게 설계하여 모든 페이지가 하나로 연결된 듯한 유기적인 사용자 경험을 선사",
+      "스크롤 위치에 따라 요소들이 각기 다른 속도로 반응하는 패럴랙스 기법을 적용하여 공간감을 형성",
+      "GNB 호출 시 일반적인 방식에서 벗어난 창의적인 모션 효과를 적용하여 인터랙션의 즐거움을 더함"
+    ],
     "description": "mir9 기업 웹사이트 반응형 퍼블리싱 및 UI 인터랙션 개발"
   },
   {
@@ -28,9 +33,14 @@
     ],
     "tags": ["HTML5", "CSS3", "SCSS", "jQuery", "반응형"],
     "period": "",
-    "techStack": ["HTML5", "CSS3", "SCSS", "jQuery"],
+    "techStack": ["HTML5", "CSS3", "SCSS", "jQuery", "GSAP"],
     "roles": ["반응형 웹 퍼블리싱", "UI 인터랙션 개발"],
-    "achievements": ["물류 기업 특성에 맞는 UI 설계", "모바일 반응형 완성도 향상"],
+    "achievements": [
+      "GSAP의 ScrollTrigger 플러그인을 적극 활용하여, 사용자의 스크롤 속도와 반응에 동기화되는 패럴랙스(Parallax) 효과 및 애니메이션을 구현",
+      "복잡한 애니메이션 구현 시 발생할 수 있는 스크롤 끊김 현상을 방지,  저사양 기기에서도 부드러운 프레임을 유지하도록 최적화",
+      "메인 비주얼부터 하단 섹션까지 이어지는 끊김 없는 인터랙션을 통해 브랜드 메시지를 몰입감 있게 전달",
+      "카운팅 애니메이션 및 SVG 데이터 시각화 요소를 인터랙티브하게 배치하여 정보 전달력을 강화"
+    ],
     "description": "KLB Logistics 기업 웹사이트 반응형 퍼블리싱"
   },
   {
@@ -62,7 +72,7 @@
     ],
     "tags": ["HTML5", "CSS3", "SCSS", "jQuery", "반응형"],
     "period": "",
-    "techStack": ["HTML5", "CSS3", "SCSS", "jQuery"],
+    "techStack": ["HTML5", "CSS3", "SCSS", "jQuery", "GSAP"],
     "roles": ["반응형 웹 퍼블리싱", "UI 인터랙션 개발"],
     "achievements": ["자동차 부품 기업 특성의 UI 구현", "크로스 브라우저 지원"],
     "description": "DKM Motor 기업 웹사이트 반응형 퍼블리싱"
@@ -79,7 +89,7 @@
     ],
     "tags": ["HTML5", "CSS3", "SCSS", "jQuery", "반응형"],
     "period": "",
-    "techStack": ["HTML5", "CSS3", "SCSS", "jQuery"],
+    "techStack": ["HTML5", "CSS3", "SCSS", "jQuery", "GSAP"],
     "roles": ["반응형 웹 퍼블리싱", "UI 인터랙션 개발"],
     "achievements": [
       "복잡한 계층 구조의 실험 장비 카탈로그 및 상세 페이지 퍼블리싱",
@@ -102,7 +112,7 @@
     "period": "",
     "techStack": ["HTML5", "CSS3", "SCSS", "jQuery", "GSAP"],
     "roles": ["반응형 웹 퍼블리싱", "UI 인터랙션 개발"],
-    "achievements": ["글로벌 기업 수준의 UI 완성도", "다국어 레이아웃 대응"],
+    "achievements": ["Staggered Clip-path Reveal Animation 구현", "글로벌 기업 수준의 UI 완성도", "다국어 레이아웃 대응"],
     "description": "CoAsia CM 글로벌 기업 웹사이트 반응형 퍼블리싱"
   },
   {
@@ -117,7 +127,7 @@
     ],
     "tags": ["HTML5", "CSS3", "SCSS", "jQuery", "반응형"],
     "period": "",
-    "techStack": ["HTML5", "CSS3", "SCSS", "jQuery"],
+    "techStack": ["HTML5", "CSS3", "SCSS", "jQuery", "GSAP"],
     "roles": ["반응형 웹 퍼블리싱", "UI 인터랙션 개발"],
     "achievements": ["감성적인 브랜드 톤 UI 구현", "모바일 최적화"],
     "description": "Salad Days 브랜드 웹사이트 퍼블리싱"
@@ -134,7 +144,7 @@
     ],
     "tags": ["HTML5", "CSS3", "SCSS", "jQuery", "반응형"],
     "period": "",
-    "techStack": ["HTML5", "CSS3", "SCSS", "jQuery"],
+    "techStack": ["HTML5", "CSS3", "SCSS", "jQuery", "GSAP"],
     "roles": ["반응형 웹 퍼블리싱", "UI 인터랙션 개발"],
     "achievements": ["엔지니어링 기업 전문성 반영 UI", "크로스 브라우저 호환"],
     "description": "Thomas Engineering 기업 웹사이트 퍼블리싱"
@@ -151,7 +161,7 @@
     ],
     "tags": ["HTML5", "CSS3", "SCSS", "jQuery", "반응형"],
     "period": "",
-    "techStack": ["HTML5", "CSS3", "SCSS", "jQuery"],
+    "techStack": ["HTML5", "CSS3", "SCSS", "jQuery", "GSAP"],
     "roles": ["반응형 웹 퍼블리싱", "UI 인터랙션 개발"],
     "achievements": ["교육기관 특성의 정보 구조 설계", "접근성 고려 마크업"],
     "description": "한국소프트웨어인재개발원 웹사이트 퍼블리싱"
@@ -168,7 +178,7 @@
     ],
     "tags": ["HTML5", "CSS3", "SCSS", "jQuery", "반응형"],
     "period": "",
-    "techStack": ["HTML5", "CSS3", "SCSS", "jQuery"],
+    "techStack": ["HTML5", "CSS3", "SCSS", "jQuery", "GSAP"],
     "roles": ["반응형 웹 퍼블리싱", "UI 인터랙션 개발"],
     "achievements": ["스타트업 브랜드 아이덴티티 반영", "반응형 레이아웃 완성"],
     "description": "ORICORN 기업 웹사이트 퍼블리싱"
@@ -185,7 +195,7 @@
     ],
     "tags": ["HTML5", "CSS3", "SCSS", "jQuery", "반응형"],
     "period": "",
-    "techStack": ["HTML5", "CSS3", "SCSS", "jQuery"],
+    "techStack": ["HTML5", "CSS3", "SCSS", "jQuery", "GSAP"],
     "roles": ["반응형 웹 퍼블리싱", "UI 인터랙션 개발"],
     "achievements": ["IT 기업 전문성 느껴지는 UI 구현"],
     "description": "태성 CNS 기업 웹사이트 퍼블리싱"
@@ -219,7 +229,7 @@
     ],
     "tags": ["HTML5", "CSS3", "SCSS", "jQuery", "반응형"],
     "period": "",
-    "techStack": ["HTML5", "CSS3", "SCSS", "jQuery"],
+    "techStack": ["HTML5", "CSS3", "SCSS", "jQuery", "GSAP"],
     "roles": ["반응형 웹 퍼블리싱", "UI 인터랙션 개발"],
     "achievements": ["모빌리티 기업 브랜드 UI 구현", "반응형 완성"],
     "description": "mobiis 기업 웹사이트 반응형 퍼블리싱"
@@ -253,7 +263,7 @@
     ],
     "tags": ["HTML5", "CSS3", "SCSS", "jQuery", "반응형"],
     "period": "",
-    "techStack": ["HTML5", "CSS3", "SCSS", "jQuery"],
+    "techStack": ["HTML5", "CSS3", "SCSS", "jQuery", "GSAP"],
     "roles": ["반응형 웹 퍼블리싱", "UI 인터랙션 개발"],
     "achievements": ["기술 기업 전문 UI 완성도 향상"],
     "description": "Apulsetech 기업 웹사이트 퍼블리싱"
@@ -287,7 +297,7 @@
     ],
     "tags": ["HTML5", "CSS3", "SCSS", "jQuery", "반응형"],
     "period": "",
-    "techStack": ["HTML5", "CSS3", "SCSS", "jQuery"],
+    "techStack": ["HTML5", "CSS3", "SCSS", "jQuery", "GSAP"],
     "roles": ["반응형 웹 퍼블리싱", "UI 인터랙션 개발"],
     "achievements": ["공구 쇼핑몰 UI/UX 구조 설계", "상품 목록 반응형 최적화"],
     "description": "JJTOOLS 쇼핑몰 웹사이트 퍼블리싱"
@@ -304,7 +314,7 @@
     ],
     "tags": ["HTML5", "CSS3", "SCSS", "jQuery", "반응형"],
     "period": "",
-    "techStack": ["HTML5", "CSS3", "SCSS", "jQuery"],
+    "techStack": ["HTML5", "CSS3", "SCSS", "jQuery", "GSAP"],
     "roles": ["반응형 웹 퍼블리싱", "UI 인터랙션 개발"],
     "achievements": ["주차 서비스 플랫폼 UI 구현"],
     "description": "ISPark 주차 서비스 웹사이트 퍼블리싱"
@@ -321,7 +331,7 @@
     ],
     "tags": ["HTML5", "CSS3", "SCSS", "jQuery", "반응형"],
     "period": "",
-    "techStack": ["HTML5", "CSS3", "SCSS", "jQuery"],
+    "techStack": ["HTML5", "CSS3", "SCSS", "jQuery", "GSAP"],
     "roles": ["반응형 웹 퍼블리싱", "UI 인터랙션 개발"],
     "achievements": ["전시회 홈페이지 정보 구조 설계", "다양한 콘텐츠 레이아웃 구현"],
     "description": "국제모션컨트롤산업전 공식 웹사이트 퍼블리싱"
@@ -338,7 +348,7 @@
     ],
     "tags": ["HTML5", "CSS3", "SCSS", "jQuery", "반응형"],
     "period": "",
-    "techStack": ["HTML5", "CSS3", "SCSS", "jQuery"],
+    "techStack": ["HTML5", "CSS3", "SCSS", "jQuery", "GSAP"],
     "roles": ["반응형 웹 퍼블리싱", "UI 인터랙션 개발"],
     "achievements": ["건설 기업 전문성 반영 UI"],
     "description": "SAMHYUN 기업 웹사이트 퍼블리싱"
@@ -355,7 +365,7 @@
     ],
     "tags": ["HTML5", "CSS3", "SCSS", "jQuery", "반응형"],
     "period": "",
-    "techStack": ["HTML5", "CSS3", "SCSS", "jQuery"],
+    "techStack": ["HTML5", "CSS3", "SCSS", "jQuery", "GSAP"],
     "roles": ["반응형 웹 퍼블리싱", "UI 인터랙션 개발"],
     "achievements": ["학회 웹사이트 정보 접근성 강화", "반응형 레이아웃 완성"],
     "description": "한국폴리우레탄학회 공식 웹사이트 퍼블리싱"
@@ -372,7 +382,7 @@
     ],
     "tags": ["HTML5", "CSS3", "SCSS", "jQuery", "반응형"],
     "period": "",
-    "techStack": ["HTML5", "CSS3", "SCSS", "jQuery"],
+    "techStack": ["HTML5", "CSS3", "SCSS", "jQuery", "GSAP"],
     "roles": ["반응형 웹 퍼블리싱", "UI 인터랙션 개발"],
     "achievements": ["협회 공식 웹사이트 UI 완성", "정보 계층 구조 설계"],
     "description": "사단법인 G밸리산업협회 웹사이트 퍼블리싱"
@@ -389,7 +399,7 @@
     ],
     "tags": ["HTML5", "CSS3", "SCSS", "jQuery", "반응형"],
     "period": "",
-    "techStack": ["HTML5", "CSS3", "SCSS", "jQuery"],
+    "techStack": ["HTML5", "CSS3", "SCSS", "jQuery", "GSAP"],
     "roles": ["반응형 웹 퍼블리싱", "UI 인터랙션 개발"],
     "achievements": ["뷰티 브랜드 감성 UI 구현", "모바일 최적화"],
     "description": "MESACOSA 뷰티 브랜드 웹사이트 퍼블리싱"
@@ -406,7 +416,7 @@
     ],
     "tags": ["HTML5", "CSS3", "SCSS", "jQuery", "반응형"],
     "period": "",
-    "techStack": ["HTML5", "CSS3", "SCSS", "jQuery"],
+    "techStack": ["HTML5", "CSS3", "SCSS", "jQuery", "GSAP"],
     "roles": ["반응형 웹 퍼블리싱", "UI 인터랙션 개발"],
     "achievements": ["건설 그룹 기업 UI 완성도 향상"],
     "description": "PIE 기업 웹사이트 퍼블리싱"
@@ -440,7 +450,7 @@
     ],
     "tags": ["HTML5", "CSS3", "SCSS", "jQuery", "반응형"],
     "period": "",
-    "techStack": ["HTML5", "CSS3", "SCSS", "jQuery"],
+    "techStack": ["HTML5", "CSS3", "SCSS", "jQuery", "GSAP"],
     "roles": ["반응형 웹 퍼블리싱", "UI 인터랙션 개발"],
     "achievements": ["클라우드 ERP 서비스 UI 완성"],
     "description": "emro CLOUD ERP 서비스 웹사이트 퍼블리싱"
@@ -457,7 +467,7 @@
     ],
     "tags": ["HTML5", "CSS3", "SCSS", "jQuery", "반응형"],
     "period": "",
-    "techStack": ["HTML5", "CSS3", "SCSS", "jQuery"],
+    "techStack": ["HTML5", "CSS3", "SCSS", "jQuery", "GSAP"],
     "roles": ["반응형 웹 퍼블리싱", "UI 인터랙션 개발"],
     "achievements": ["기업 웹사이트 리뉴얼", "모던 UI 적용"],
     "description": "JKC CORPORATION 기업 웹사이트 퍼블리싱"
@@ -542,7 +552,7 @@
     ],
     "tags": ["HTML5", "CSS3", "SCSS", "jQuery", "반응형"],
     "period": "",
-    "techStack": ["HTML5", "CSS3", "SCSS", "jQuery"],
+    "techStack": ["HTML5", "CSS3", "SCSS", "jQuery", "GSAP"],
     "roles": ["반응형 웹 퍼블리싱", "UI 인터랙션 개발"],
     "achievements": ["글로벌 기업 다국어 레이아웃 대응"],
     "description": "LKS GLOBAL 기업 웹사이트 퍼블리싱"
@@ -559,7 +569,7 @@
     ],
     "tags": ["HTML5", "CSS3", "SCSS", "jQuery", "반응형"],
     "period": "",
-    "techStack": ["HTML5", "CSS3", "SCSS", "jQuery"],
+    "techStack": ["HTML5", "CSS3", "SCSS", "jQuery", "GSAP"],
     "roles": ["반응형 웹 퍼블리싱", "UI 인터랙션 개발"],
     "achievements": ["의료 바이오 기업 전문 UI 완성"],
     "description": "SOLSION Biomedical 기업 웹사이트 퍼블리싱"
@@ -576,7 +586,7 @@
     ],
     "tags": ["HTML5", "CSS3", "SCSS", "jQuery", "반응형"],
     "period": "",
-    "techStack": ["HTML5", "CSS3", "SCSS", "jQuery"],
+    "techStack": ["HTML5", "CSS3", "SCSS", "jQuery", "GSAP"],
     "roles": ["반응형 웹 퍼블리싱", "UI 인터랙션 개발"],
     "achievements": ["바이오 셀 기업 과학적 UI 표현"],
     "description": "TSCellBio 기업 웹사이트 퍼블리싱"
@@ -593,7 +603,7 @@
     ],
     "tags": ["HTML5", "CSS3", "SCSS", "jQuery", "반응형"],
     "period": "",
-    "techStack": ["HTML5", "CSS3", "SCSS", "jQuery"],
+    "techStack": ["HTML5", "CSS3", "SCSS", "jQuery", "GSAP"],
     "roles": ["반응형 웹 퍼블리싱", "UI 인터랙션 개발"],
     "achievements": ["헬스케어 기업 신뢰 느껴지는 UI"],
     "description": "HEXAINNOHEAL 헬스케어 기업 웹사이트 퍼블리싱"
