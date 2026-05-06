@@ -53,7 +53,11 @@ export function ProfilePage() {
               <span className={styles.nameEn}>{profile.nameEn}</span>
               <span className={styles.nameKo}>{profile.name}</span>
             </h1>
-            <p className={styles.bio}>{profile.bio}</p>
+            <div className={styles.bio}>
+              {profile.bio.map((line) => (
+                <p key={line}>{line}</p>
+              ))}
+            </div>
             <div className={styles.contactList}>
               <a
                 href={`mailto:${profile.contact.email}`}

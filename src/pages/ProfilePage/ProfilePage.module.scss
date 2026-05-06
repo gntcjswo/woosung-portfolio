@@ -77,6 +77,10 @@
   line-height: 1.8;
   word-break: keep-all;
 
+  p + p {
+    margin-top: $spacing-md;
+  }
+
   @include tablet {
     font-size: 15px;
   }
