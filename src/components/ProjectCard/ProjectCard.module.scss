@@ -127,3 +127,39 @@
     border-color: $color-border-hover;
   }
 }
+
+// 비활성 링크 스타일 (대체 텍스트 표시 시)
+.linkDisabled {
+  cursor: not-allowed;
+  opacity: 0.7;
+  background: $color-muted;
+  color: $color-secondary;
+  border-color: $color-border;
+
+  &:hover {
+    color: $color-secondary;
+    border-color: $color-border;
+    transform: none;
+  }
+}
+
+// 숨겨진 프로젝트 스타일 (개발 모드에서만)
+.hidden {
+  opacity: 0.6;
+  filter: grayscale(30%);
+}
+
+.hiddenBadge {
+  position: absolute;
+  top: $spacing-sm;
+  right: $spacing-sm;
+  background: rgba(255, 193, 7, 0.9);
+  color: #000;
+  font-size: 11px;
+  font-weight: 600;
+  padding: 2px 8px;
+  border-radius: $radius-sm;
+  letter-spacing: 0.02em;
+  backdrop-filter: blur(4px);
+  z-index: 2;
+}

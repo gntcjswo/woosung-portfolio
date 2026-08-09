@@ -28,7 +28,8 @@
     "links": [
       {
         "label": "Live",
-        "url": "http://klbkorea.com/"
+        "url": "http://klbkorea.com/",
+        "altText": "호스팅 만료"
       }
     ],
     "tags": ["HTML5", "CSS3", "SCSS", "jQuery", "반응형"],
@@ -42,6 +43,29 @@
       "카운팅 애니메이션 및 SVG 데이터 시각화 요소를 인터랙티브하게 배치하여 정보 전달력을 강화"
     ],
     "description": "KLB Logistics 기업 웹사이트 반응형 퍼블리싱"
+  },
+  {
+    "id": "klb",
+    "name": "KLB Logistics",
+    "thumbnail": "/img/portfolio/img_klb.jpg",
+    "links": [
+      {
+        "label": "Live",
+        "url": "http://klbkorea.com/"
+      }
+    ],
+    "tags": ["HTML5", "CSS3", "SCSS", "jQuery", "반응형"],
+    "period": "",
+    "techStack": ["HTML5", "CSS3", "SCSS", "jQuery", "GSAP"],
+    "roles": ["반응형 웹 퍼블리싱", "UI 인터랙션 개발"],
+    "achievements": [
+      "GSAP의 ScrollTrigger 플러그인을 적극 활용하여, 사용자의 스크롤 속도와 반응에 동기화되는 패럴랙스(Parallax) 효과 및 애니메이션을 구현",
+      "복잡한 애니메이션 구현 시 발생할 수 있는 스크롤 끊김 현상을 방지,  저사양 기기에서도 부드러운 프레임을 유지하도록 최적화",
+      "메인 비주얼부터 하단 섹션까지 이어지는 끊김 없는 인터랙션을 통해 브랜드 메시지를 몰입감 있게 전달",
+      "카운팅 애니메이션 및 SVG 데이터 시각화 요소를 인터랙티브하게 배치하여 정보 전달력을 강화"
+    ],
+    "description": "KLB Logistics 기업 웹사이트 반응형 퍼블리싱",
+    "visible": false
   },
   {
     "id": "turbowin",

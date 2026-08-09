@@ -156,27 +156,43 @@ export function ProjectModal() {
 
           {project.links.length > 0 && (
             <div className={styles.links}>
-              {project.links.map((link) => (
-                <a
-                  key={link.url}
-                  href={link.url}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className={styles.linkBtn}
-                  aria-label={`${project.name} ${link.label} 바로 가기 (새 창)`}
-                >
-                  {link.label} 바로 가기
-                  <svg viewBox="0 0 16 16" fill="none" aria-hidden="true">
-                    <path
-                      d="M3 2h10v10M13 2L3 12"
-                      stroke="currentColor"
-                      strokeWidth="1.5"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                    />
-                  </svg>
-                </a>
-              ))}
+              {project.links.map((link) => {
+                // altText가 있으면 링크 대신 대체 텍스트 표시
+                if (link.altText) {
+                  return (
+                    <span
+                      key={link.url}
+                      className={`${styles.linkBtn} ${styles.linkDisabled}`}
+                      aria-label={`${project.name} ${link.label}: ${link.altText}`}
+                    >
+                      {link.altText}
+                    </span>
+                  );
+                }
+                
+                // altText가 없으면 기존 링크 표시
+                return (
+                  <a
+                    key={link.url}
+                    href={link.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className={styles.linkBtn}
+                    aria-label={`${project.name} ${link.label} 바로 가기 (새 창)`}
+                  >
+                    {link.label} 바로 가기
+                    <svg viewBox="0 0 16 16" fill="none" aria-hidden="true">
+                      <path
+                        d="M3 2h10v10M13 2L3 12"
+                        stroke="currentColor"
+                        strokeWidth="1.5"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                      />
+                    </svg>
+                  </a>
+                );
+              })}
             </div>
           )}
         </div>
