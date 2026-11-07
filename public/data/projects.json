@@ -1,5 +1,42 @@
 [
   {
+    "id": "raonbnp-landing",
+    "name": "라온비엔피 랜딩페이지",
+    "thumbnail": "/img/portfolio/img_raon_landing.jpg",
+    "links": [
+      {
+        "label": "Live",
+        "url": "http://multi-backup.woobi.co.kr/raon-landing/"
+      }
+    ],
+    "tags": ["Next.js", "Three.js", "React", "TypeScript", "Tailwind CSS"],
+    "period": "2026.11",
+    "techStack": [
+      "Next.js(App Router, Static Export)",
+      "React 19",
+      "TypeScript",
+      "Tailwind CSS",
+      "Three.js",
+      "React Three Fiber",
+      "GLSL",
+      "Lenis",
+      "Swiper"
+    ],
+    "roles": [
+      "스크롤 내러티브 기획",
+      "비주얼·인터랙션 설계",
+      "반응형 프론트엔드 개발"
+    ],
+    "achievements": [
+      "단일 WebGL 캔버스 고정과 카메라 동선 설계, CSS 변수 기반의 스크롤 동기화를 통해 챕터 간 단절 없이 공간감과 장면이 하나로 이어지는 인터랙티브 인터페이스를 구현했습니다.",
+      "챕터마다 WebGL 캔버스를 두면 장면이 바뀔 때마다 맥락이 끊기고 렌더 비용이 커집니다. 고정 캔버스 하나를 스크롤 루프가 직접 돌리게 하고, 진행도에 따라 장면만 교체했습니다. 블룸은 어두운 챕터에서만 켜서 밝은 구간에서는 비용을 줄였습니다.",
+      "긴 스크롤에서 섹션마다 스크립트로 위치를 계산하면 레이아웃이 흔들리고 챕터 연결이 제각각이 됩니다. 핀 섹션은 sticky 스테이지로 고정하고, 스크롤 진행도를 CSS 변수로만 넘겨 transform과 opacity로 모션을 맞춰 리플로우 없이 같은 문법으로 움직이게 했습니다.",
+      "1024px을 기준으로 파이프라인은 세로 타임라인으로, 핀 챕터는 문서 흐름으로 바꾸고, prefers-reduced-motion에서는 스크롤 연출을 끄고 정적 레이아웃으로 보여 주게 했습니다.",
+      "구축 사례 169건과 챕터 영상을 페이지 로드 때 모두 받으면 첫 화면이 무거워집니다. 썸네일은 아틀라스 한 장으로 합치고, 영상은 뷰포트 근처에 들어올 때만 소스를 붙여 동시에 재생되는 개수를 제한했습니다."
+    ],
+    "description": "라온비엔피 기업 홈페이지 제작사의 사이트를 11개 챕터 롱스크롤로 다시 설계하고, 스크롤 진행도가 3D 장면과 화면 요소를 함께 움직이는 인터랙션 사이트로 구현했습니다."
+  },
+  {
     "id": "forma",
     "name": "FORMA",
     "thumbnail": "/img/portfolio/img_forma.jpg",
@@ -9,12 +46,15 @@
         "url": "https://forma.web12.kr/"
       }
     ],
-    "tags": [],
-    "period": "",
-    "techStack": [],
+    "tags": ["HTML5", "CSS", "JavaScript", "WebGL", "GLSL"],
+    "period": "2026.09 / 기여도 100%",
+    "techStack": ["HTML5", "CSS", "JavaScript", "WebGL", "GLSL", "p5.js", "Lenis"],
     "roles": ["반응형 웹 퍼블리싱", "UI 인터랙션 개발"],
     "achievements": [
-      "크리에이티브 인터랙션 중심"
+      "WebGL 캔버스와 커스텀 GLSL 셰이더를 활용하여, 스크롤 속도와 진행도에 맞춰 이미지가 액체처럼 왜곡·전환되는 메인 비주얼을 구현했습니다.",
+      "전환 구간에만 파동·왜곡 효과를 켜고, 이후 구간은 페이드로 전환해 저사양 기기에서도 프레임이 떨어지지 않도록 최적화했습니다.",
+      "메인 비주얼부터 Philosophy, Collective, Benefits까지 로고가 섹션을 가로지르며 타이포와 결합되는 스크롤 연출로, 브랜드 세계관을 한 흐름으로 전달했습니다.",
+      "라인 단위 텍스트 리빌, sticky 스토리 섹션, SVG 플로우 모션, 멤버 마키 등 인터랙티브 요소를 배치하여 멤버십 메시지의 전달력을 강화했습니다."
     ],
     "description": "FORMA 기업 웹사이트 반응형 퍼블리싱 및 UI 인터랙션 개발"
   },
@@ -104,14 +144,18 @@
         "url": "https://raonbnp.com/"
       }
     ],
-    "tags": [],
-    "period": "",
-    "techStack": [],
-    "roles": ["반응형 웹 퍼블리싱", "UI 인터랙션 개발"],
+    "tags": ["HTML5", "CSS", "JavaScript", "GSAP", "ScrollSmoother"],
+    "period": "2026.09",
+    "techStack": ["HTML5", "CSS", "JavaScript", "GSAP", "ScrollSmoother"],
+    "roles": ["UI 인터랙션 개발 및 고도화", "SEO/AEO/GEO 최적화 및 기술적 개선"],
     "achievements": [
-      "크리에이티브 인터랙션 중심"
+      "자사 홈페이지 오류 수정, 신규 페이지 구축 및 UI 인터랙션을 고도화했습니다.",
+      "SEO/AEO/GEO 진단 도구 기반 사이트 분석 및 개선 작업을 통해 진단 점수를 향상시켰습니다.",
+      "AEO/GEO 대응을 위한 질문형 콘텐츠, 정의형 요약문, 최신성·수치·근거 정보 및 FAQ 구조화 데이터를 개선했습니다.",
+      "SEO 최적화를 위한 Title, Canonical, Open Graph, Breadcrumb, 시맨틱 마크업 등 검색엔진 최적화 요소를 개선했습니다.",
+      "이미지 CLS 및 로딩 성능 개선을 위한 width/height, loading=\"lazy\" 적용했습니다."
     ],
-    "description": "라온비엔피 기업 웹사이트 반응형 퍼블리싱 및 UI 인터랙션 개발"
+    "description": "라온비엔피 자사 홈페이지 UI 인터랙션 고도화 및 SEO/AEO/GEO 최적화"
   },
   {
     "id": "deepdiveinto",
